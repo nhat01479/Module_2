@@ -73,12 +73,16 @@ public class Program {
     System.out.println("Ký tự: " + ch);
 
     //Hoặc
-    String str = "abcde";
+    System.out.println("Nhập vào 1 chuỗi");
+    String str = scanner.next();
     System.out.println("Chuỗi: " + str);
-    String x = str.substring(1,2);
-    System.out.println(x);
+
     char charr = str.charAt(0);
-    System.out.println("Ký tự: " + charr); //a
+    System.out.println("Ký tự: " + charr);
+
+
+
+
   }
 }
 
