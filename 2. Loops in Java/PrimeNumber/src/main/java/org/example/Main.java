@@ -12,7 +12,7 @@ public class Main {
     int count = 0;
     if (num < 2)
       System.out.println(num + " khong phai so nguyen to");
-    for (int i = 2; i < Math.sqrt(num); i++) {
+    for (int i = 2; i <= Math.sqrt(num); i++) {
       if (num % i == 0) {
         count++;
       }
