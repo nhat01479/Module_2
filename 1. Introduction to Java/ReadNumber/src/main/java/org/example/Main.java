@@ -9,7 +9,7 @@ public class Main {
 
     System.out.println("Nhap so can doc");
     int num = scanner.nextInt();
-/**
+
     String[] ones = {"", "mốt", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín", "mười", "mười một", "mười hai", "mười ba", "mười bốn", "mười lăm", "mười sáu", "mười bảy", "mười tám", "mười chín"};
     String[] tens = {"", "", "hai mươi", "ba mươi", "bốn mươi", "năm mươi", "sáu mươi", "bảy mươi", "tám mươi", "chín mươi"};
     String[] hundreds = {"", "một trăm", "hai trăm", "ba trăm", "bốn trăm", "năm trăm", "sáu trăm", "bảy trăm", "tám trăm", "chín trăm"};
@@ -46,7 +46,7 @@ public class Main {
 
       System.out.println("Số " + num + " đọc thành chữ là: " + result);
     }
- */
+
 
   }
 }
