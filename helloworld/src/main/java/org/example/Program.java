@@ -1,18 +1,20 @@
 package org.example;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Program {
 
   public static Scanner scanner = new Scanner(System.in);
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
 /*
     System.out.println("Helloooooooooooo");
 
 
-    System.out.println("Nhập vào 1 chuỗi");
-    String b = scanner.nextLine();
+    System.out.println("Nhập vào 1 chuỗi"); //Trước khi nhập chuỗi hoặc ký tự, trong lệnh bàn phím có chứa ký tự "enter" thì sẽ nhập cho chuỗi luôn ==> bộ đệm nhập;
+    String b = scanner.nextLine();          //Trước khi nhập liệu chuỗi phải đảm bảo bộ đệm không chứa gì hết ==> dùng: scanner.nextLine(); trước khi nhập
+    scanner.nextLine();
     System.out.println(b);
 
 
@@ -44,10 +46,39 @@ public class Program {
       a = scanner.nextInt();
     }
     while (a < 0);
+
+     int a = 5;
+    int b = 2;
+    System.out.println(a / b); // Chia lấy nguyên: 2
+    System.out.println((float) a / b);  //Ép kiểu chia lấy số thực: 2.5
+    System.out.println(a % b); //1
+
+    float c = 5;
+    int d = 2;
+    System.out.println(c / d); //2.5
 */
+    System.out.println("Nhập vào 1 số");
+    int a = scanner.nextInt();
+    System.out.println(a);
 
+    System.out.println("Nhập vào 1 chuỗi"); //Trước khi nhập chuỗi hoặc ký tự, trong lệnh bàn phím có chứa ký tự "enter" thì sẽ nhập cho chuỗi luôn ==> bộ đệm nhập;
+    scanner.nextLine();          //Trước khi nhập liệu chuỗi phải đảm bảo bộ đệm không chứa gì hết ==> dùng: scanner.nextLine(); trước khi nhập
+    String b = scanner.nextLine();
+    System.out.println(b);
 
+    //Cách thức nhập liệu cho biến kiểu char
+    char ch;
+    System.out.println("Nhập ký tự: ");
+    ch = (char) System.in.read();  //IOException
+    System.out.println("Ký tự: " + ch);
 
+    //Hoặc
+    String str = "abcde";
+    System.out.println("Chuỗi: " + str);
+    String x = str.substring(1,2);
+    System.out.println(x);
+    char charr = str.charAt(0);
+    System.out.println("Ký tự: " + charr); //a
   }
 }
 
