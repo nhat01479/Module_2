@@ -11,7 +11,7 @@ public class Main {
     int num = scanner.nextInt();
     boolean check;
 
-    for (int i = 2; i < 1000; i++) {
+    for (int i = 2; i < num; i++) {
       check = true;
       if (i < num) {
         for (int j = 2; j <= Math.sqrt(i); j++) {
