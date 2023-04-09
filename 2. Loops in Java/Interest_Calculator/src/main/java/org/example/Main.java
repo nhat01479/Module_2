@@ -16,9 +16,9 @@ public class Main {
         System.out.println("Nhap lai suat");
         interestRate = scanner.nextDouble();
         double totalInterest = 0;
-        for (int i = 0; i < month; i++){
-            totalInterest += money * (interestRate/12) * month;
+        for (int i = 1; i <= month; i++){
+            totalInterest += money * (interestRate/100)/12;
         }
-        System.out.printf("Tien lai sau %d thang gui voi lai suat %.3f la %.3f", month, interestRate, totalInterest);
+        System.out.printf("So tien sau %d thang gui voi lai suat %.1f la %.3f", month, interestRate, totalInterest);
     }
 }
