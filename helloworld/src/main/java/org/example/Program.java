@@ -1,4 +1,5 @@
 package org.example;
+import java.lang.*;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -59,11 +60,11 @@ public class Program {
 */
     System.out.println("Nhập vào 1 số");
     int a = scanner.nextInt();
-//    int a = Integer.parseInt(scanner.nextInt());
+//    int a = Integer.parseInt(scanner.nextInt()); //Xử lý khi bị trôi dùng cách này hoặc cách dưới
     System.out.println(a);
 
     System.out.println("Nhập vào 1 chuỗi"); //Trước khi nhập chuỗi hoặc ký tự, trong lệnh bàn phím có chứa ký tự "enter" thì sẽ nhập cho chuỗi luôn ==> bộ đệm nhập;
-    scanner.nextLine();          //Trước khi nhập liệu chuỗi phải đảm bảo bộ đệm không chứa gì hết ==> dùng: scanner.nextLine(); trước khi nhập
+    scanner.nextLine();                     //Trước khi nhập liệu chuỗi phải đảm bảo bộ đệm không chứa gì hết ==> dùng: scanner.nextLine(); trước khi nhập
     String b = scanner.nextLine();
     System.out.println(b);
 
