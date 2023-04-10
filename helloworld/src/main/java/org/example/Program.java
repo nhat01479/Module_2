@@ -60,7 +60,7 @@ public class Program {
 */
     System.out.println("Nhập vào 1 số");
     int a = scanner.nextInt();
-//    int a = Integer.parseInt(scanner.nextInt()); //Xử lý khi bị trôi dùng cách này hoặc cách dưới
+//    int a = Integer.parseInt(scanner.nextLine()); //Xử lý khi bị trôi dùng cách này hoặc cách dưới
     System.out.println(a);
 
     System.out.println("Nhập vào 1 chuỗi"); //Trước khi nhập chuỗi hoặc ký tự, trong lệnh bàn phím có chứa ký tự "enter" thì sẽ nhập cho chuỗi luôn ==> bộ đệm nhập;
