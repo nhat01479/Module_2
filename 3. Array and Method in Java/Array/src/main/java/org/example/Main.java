@@ -31,7 +31,7 @@ myList là 1 biến chứa tham chiếu đến 1 mảng
 Tuy nhiên tường gọi myList là 1 mảng
 ******* Khởi tạo mảng ****************************************************************
 
-      arrayRefVar = new elementType[arraySize]
+      arrayRefVar = new elementType[arraySize];
 
 ************ Khai báo, khởi tạo và gắn tham chiếu cho biến mảng ********************
 
@@ -43,7 +43,9 @@ hoặc
 
   arrayRefVar[index] = value;
 
-Ví dụ: khai báo String gồm 10 phần tử
+Ví dụ: khai báo String gồm 10 phần tử:
+str là biến mảng
+new String[10] là đối tượng mảng
 
     String[] str = new String[10];
 
