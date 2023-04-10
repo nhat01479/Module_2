@@ -95,9 +95,9 @@ public class Main {
           }
           break;
         case 3:
-          for (int i = 0; i < 6; i++) {
-            for (int j = 0; j < 12; j++) {
-              if (j >= 6 - i && j <= 6 + i) {
+          for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 20; j++) {
+              if (j >= 10 - i && j <= 10 + i) {
                 str += "*";
               } else {
                 str += " ";
