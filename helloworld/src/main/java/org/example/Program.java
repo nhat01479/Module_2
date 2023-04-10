@@ -59,6 +59,7 @@ public class Program {
 */
     System.out.println("Nhập vào 1 số");
     int a = scanner.nextInt();
+//    int a = Integer.parseInt(scanner.nextInt());
     System.out.println(a);
 
     System.out.println("Nhập vào 1 chuỗi"); //Trước khi nhập chuỗi hoặc ký tự, trong lệnh bàn phím có chứa ký tự "enter" thì sẽ nhập cho chuỗi luôn ==> bộ đệm nhập;
