@@ -5,9 +5,11 @@ import java.util.Arrays;
 public class AddElement {
     public static void main(String[] args) {
         int[] myList = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        System.out.println(Arrays.toString(myList));
+
 //        myList = addElement(7, myList);
 //        System.out.println(Arrays.toString(myList));
-        System.out.println(Arrays.toString(myList));
+
 
         int value = 10;
         int indexofvalue = 9;
@@ -30,7 +32,7 @@ public class AddElement {
         newList[newList.length - 1] = value;
         return newList;
     }
-
+//Add element vào vị trí bất kỳ
     public static int[] moveElementToIndex(int index, int value, int[] numbers) {
 
         int[] newList = new int[numbers.length + 1];
@@ -38,6 +40,7 @@ public class AddElement {
             newList[i] = numbers[i];
         }
         newList[index] = value;
+
         for (int i = index; i < newList.length - 1; i++) {
             newList[i + 1] = numbers[i];
         }
