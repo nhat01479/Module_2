@@ -12,36 +12,45 @@ public class Fan {
         Fan fan2 = new Fan();
         fan2.setSpeed(fan1.MEDIUM);
         fan2.setRadius(5);
-        fan2.setColor("blue");
+        fan2.setColor("green");
         fan2.setStatus(false);
         System.out.println(fan2.toString());
     }
+    //Constant speed
     final int SLOW = 1;
     final int MEDIUM = 2;
     final int FAST = 3;
-    private int speed = SLOW;
-    private boolean on = false;
-    private double radius = 5;
-    private String color = "blue";
+    //Fan variables
+    private int speed;
+    private boolean on;
+    private double radius;
+    private String color;
 
     public Fan() {
+        speed = SLOW;
+        on = false;
+        radius = 5;
+        color = "blue";
     }
 
     /*------------ set ----------*/
-    public void setSpeed(int speed) {
-        this.speed = speed;
+    public void setSpeed(int newSpeed) {
+        if (newSpeed < 0 || newSpeed > 3)
+            System.out.println("Khong hop le");
+        else
+            speed = newSpeed;
     }
 
-    public void setStatus(boolean on) {
-        this.on = on;
+    public void setStatus(boolean newOn) {
+        on = newOn;
     }
 
-    public void setRadius(double radius) {
-        this.radius = radius;
+    public void setRadius(double newRadius) {
+        radius = newRadius;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setColor(String newColor) {
+        color = newColor;
     }
 
     /*------------ get ----------*/
