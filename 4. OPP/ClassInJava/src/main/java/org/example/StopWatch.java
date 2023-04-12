@@ -1,5 +1,4 @@
 package org.example;
-
 import java.time.Duration;
 import java.time.LocalTime;
 import java.util.Arrays;
@@ -16,19 +15,11 @@ public class StopWatch {
         StopWatch watch = new StopWatch();
         watch.start();
 
-        for (int i = 0; i < a.length - 1; i++) {
-            for (int j = i + 1; j < a.length; j++) {
-                if (a[j] > a[i]) {
-                    int temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
-                }
-            }
-        }
+        sortArray(a);
 
         watch.stop();
         System.out.println(Arrays.toString(a));
-        System.out.println(watch.getElapsedTime().toMillis());
+        System.out.println("Thoi gian sap xep: "+ watch.getElapsedTime() + " milliseconds");
     }
 
     private LocalTime startTime;
@@ -42,7 +33,7 @@ public class StopWatch {
         return endTime;
     }
 
-    public void StopWatch() {
+    public StopWatch() {
         this.startTime = LocalTime.now();
     }
 
@@ -54,9 +45,26 @@ public class StopWatch {
         this.endTime = LocalTime.now();
     }
 
-    public Duration getElapsedTime() {
-        Duration time = Duration.between(this.startTime, this.endTime);
-        return time;
+    public long getElapsedTime(){
+        long times = (endTime.toNanoOfDay() - startTime.toNanoOfDay())/1000000;
+        return times;
+    }
+//    public Duration getElapsedTime() {
+//        Duration time = Duration.between(this.startTime, this.endTime);
+//        return time;
+//    }
+// Di voi         System.out.println(watch.getElapsedTime().toMillis());
+    public static int[] sortArray(int[] a){
+        for (int i = 0; i < a.length - 1; i++) {
+            for (int j = i + 1; j < a.length; j++) {
+                if (a[j] > a[i]) {
+                    int temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+        }
+        return a;
     }
 }
 
