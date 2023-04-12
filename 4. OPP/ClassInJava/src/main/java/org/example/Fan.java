@@ -27,10 +27,10 @@ public class Fan {
     private String color;
 
     public Fan() {
-        speed = SLOW;
-        on = false;
-        radius = 5;
-        color = "blue";
+        this.speed = SLOW;
+        this.on = false;
+        this.radius = 5;
+        this.color = "blue";
     }
 
     /*------------ set ----------*/
@@ -38,19 +38,19 @@ public class Fan {
         if (newSpeed < 0 || newSpeed > 3)
             System.out.println("Khong hop le");
         else
-            speed = newSpeed;
+            this.speed = newSpeed;
     }
 
     public void setStatus(boolean newOn) {
-        on = newOn;
+        this.on = newOn;
     }
 
     public void setRadius(double newRadius) {
-        radius = newRadius;
+        this.radius = newRadius;
     }
 
     public void setColor(String newColor) {
-        color = newColor;
+        this.color = newColor;
     }
 
     /*------------ get ----------*/
