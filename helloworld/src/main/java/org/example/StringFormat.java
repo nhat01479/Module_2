@@ -40,22 +40,22 @@ public class StringFormat {
 */
 
 
-//        System.out.printf("Integer : %d\n", 15);
-//        System.out.printf("Floating point number with 3 decimal digits: %.3f \n", 1.21312939123);
-//        System.out.printf("Floating point number with 8 decimal digits: %.8f \n", 1.21312939123);
-//        System.out.printf("String: %s, integer: %5d, float: %6.3f \n", "Hello", 589, 9.231435);
-//        System.out.printf("Re-order output %4$2s %1$2s %3$2s %2$2s \n", "a", "b", "c", "d");
+        System.out.printf("Integer : %d\n", 15);
+        System.out.printf("Floating point number with 3 decimal digits: %.3f \n", 1.21312939123); //1.213
+        System.out.printf("Floating point number with 8 decimal digits: %.8f \n", 1.21312939123);
+        System.out.printf("String: %s, integer: %5d, float: %6.3f \n", "Hello", 589, 9.231435);
+        System.out.printf("Re-order output %4$2s %1$2s %3$2s %2$2s \n", "a", "b", "c", "d");
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Nhập tên: ");
-        String name = input.nextLine();
-        System.out.print("Nhập tuổi: ");
-//        int age = input.nextInt();                    // bị trôi lệnh tại đây
-        int age = Integer.parseInt(input.nextLine());   //Đã xử lý trôi lệnh
-//        input.nextLine();
-        System.out.print("Nhập địa chỉ: ");
-        String address = input.nextLine();
-
-        System.out.println(name + " -- " + age + " -- " + address);
+//        Scanner input = new Scanner(System.in);
+//        System.out.print("Nhập tên: ");
+//        String name = input.nextLine();
+//        System.out.print("Nhập tuổi: ");
+////        int age = input.nextInt();                    // bị trôi lệnh tại đây
+//        int age = Integer.parseInt(input.nextLine());   //Đã xử lý trôi lệnh
+////        input.nextLine();
+//        System.out.print("Nhập địa chỉ: ");
+//        String address = input.nextLine();
+//
+//        System.out.println(name + " -- " + age + " -- " + address);
     }
 }
