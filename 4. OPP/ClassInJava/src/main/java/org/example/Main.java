@@ -19,10 +19,10 @@ public class Main {
 
 		+ class body: nơi khai báo các thành phần:
 		    .	data field (trường dữ liệu)
-		    .   phương thức (method)
+		    .   phương thức (method): Trong một lớp có thể có nhiều phương thức cùng tên nhưng khác nhau về tham số (kiểu, số lượng và thứ tự) - Overload - nạp chồng
 		    .	contructor: phương thức khởi tạo ==> để khởi tạo các đối tượng của lớp
 					        có TÊN TRÙNG VỚI TÊN LỚP
-				        	1 lớp có thể có nhiều contructor
+				        	1 lớp có thể có nhiều contructor trùng tên nhưng khác tham số
 				        	nếu không khai báo thì mặc định lớp có 1 contructor không có tham số
 
 -	Quy tắc đặt tên: 	quy tắc lạc đà
