@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Arrays;
 
-public class Main {
+public class Bai1 {
     public static void main(String[] args) {
         int[] numbers = {1, 2, 5, 10, 11, 13, 16, 120, 131, 157};
         System.out.println(Arrays.toString(numbers));
