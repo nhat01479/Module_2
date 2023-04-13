@@ -6,6 +6,10 @@ public class Main {
 *
 * Tìm kiếm tuần tự (tuyến tính) - Linear Search
 *
+* Giải thuật này chỉ hiệu quả khi cần tìm kiếm trên một
+* mảng/danh sách đủ nhỏ hoặc một mảng/danh sách chưa sắp thứ
+* tự.
+*
 *Tìm kiếm nhị phân - Binary S
 *
 *   Tìm kiếm nhị phân là một loại thuật toán tìm kiếm nâng cao
