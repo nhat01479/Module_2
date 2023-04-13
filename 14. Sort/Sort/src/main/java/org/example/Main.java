@@ -24,13 +24,16 @@ public class Main {
      * Tìm cách chèn phần tử a[i] vào vị trí thích hợp của đoạn đã được sắp để có dãy mới a[0] , a[1] ,... , a[i-1] trở nên có thứ tự
      * Vị trí này chính là pos thỏa : a[pos-1] <= a[i ]< a[pos] (1 <= pos <= i)
      * https://james.codegym.vn/pluginfile.php/49162/mod_page/content/1/insert-sort.gif?time=1614047561135
+     *
+     *
+     * Sắp xếp đổi chỗ trực tiếp (Interchange Sort)
      * */
     public static void main(String[] args) {
 
         int [] a = {6,1,7,8,3,4,5,2,9};
         System.out.println(Arrays.toString(a));
 
-        insertionSort(a);
+        selectionSort(a);
         System.out.println(Arrays.toString(a));
     }
     public static void bubbleSort(int[] array) {
@@ -44,19 +47,21 @@ public class Main {
         }
     }
     public static void selectionSort(int[] array) {
-        int min; // chỉ số phần tử nhỏ nhất trong dãy hiện hành
+        int minIndex; // chỉ số phần tử nhỏ nhất trong dãy hiện hành
         for (int  i = 0; i < array.length - 1; i++){
-            min = i;
+            minIndex = i;
             for(int j = i + 1; j < array.length; j++)
-                if (array[j] < array[min])
-                    min = j; // ghi nhận vị trí phần tử nhỏ nhất
-            if (min != i){
-                int temp = array[min];
-                array[min] = array[i];
+                if (array[j] < array[minIndex])
+                    minIndex = j; // ghi nhận vị trí phần tử nhỏ nhất
+            if (minIndex != i){
+                int temp = array[minIndex];
+                array[minIndex] = array[i];
                 array[i] = temp;
             }
         }
+
     }
+
     public static void insertionSort(int[] array){
         int pos, x;
         for(int i = 1; i < array.length; i++){ //đoạn array[0] đã sắp xếp
@@ -67,6 +72,17 @@ public class Main {
                 pos--;
             }
             array[pos] = x;
+        }
+    }
+    public static void interchangeSort(int[] numbers) {
+        for (int i = 0; i < numbers.length - 1; i++) {
+            for (int j = i + 1; j < numbers.length; j++) {
+                if (numbers[j] < numbers[i]) {
+                    int temp = numbers[i];
+                    numbers[i] = numbers[j];
+                    numbers[j] = temp;
+                }
+            }
         }
     }
 }
