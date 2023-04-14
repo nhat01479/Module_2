@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-
-        li{
-            margin-top: 10px;
+        body{
+            font-family: Arial;
+            font-size: 110%;
+            max-width: 1000px;
+            margin: auto    ;
+            background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
         }
+
+
     </style>
 </head>
 <body>
-<h1 style="text-align: center" id="top">Access modifier</h1>
+<h1 style="text-align: center" id="top">Access modifier, static method, static property</h1>
 <ol type="I">
     <h3><li><a href="#acm">Access modifier</a></li></h3>
     <h3><li><a href="#get">Getter/ Setter</a></li></h3>
@@ -20,10 +25,13 @@
 </ol>
 <pre id="acm">
 Access modifier là các từ khoá được sử dụng để quy định mức độ truy cập đến lớp và các thành phần của lớp
-+   public: có thể truy cập từ bất cứ đâu;
-+   private: các phương thức và thuộc tính chỉ được phép truy xuất trong cùng một lớp;
-+   protected: các PT và thuộc tính được phép truy xuất trong cùng một lớp và ở các lớp con (kế thừa);
-+   default: nếu không có access modifier thì mức default sẽ được áp dụng. Lớp và các thành phần của lớp được truy xuất ở những nơi trong cùng một package
+-   public: có thể truy cập từ bất cứ đâu;
+-   private: các phương thức và thuộc tính chỉ được phép truy xuất trong cùng một lớp;
+-   protected: các PT và thuộc tính được phép truy xuất trong cùng một lớp và ở các lớp con (kế thừa);
+-   default: nếu không có access modifier thì mức default sẽ được áp dụng. Lớp và các thành phần của lớp được truy xuất ở những nơi trong cùng một package
+-   <b>Local Variables và Access Modifiers</b>:
+    +   không thể áp dụng access modifier cho các biến cục bộ
+    +   chỉ áp dụng được modifier là <b>final</b>
 Ví dụ:
 </pre>
 
@@ -45,8 +53,8 @@ Ví dụ:
     của đối tượng bằng cách sử dụng từ khoá PRIVATE.
 </pre>
 <hr>
-<h3 id="package">1. Package (gói)</h3>
 <pre>
+    <h3 id="package">1. Package (gói)</h3>
     -   Là cách phân loại các lớp và interface thành các nhóm có liên quan đến nhau và tổ chức chúng thành các đơn vị để quản lý
     -   java.io, java.net, java.security, java.util, ...
     -   Có thể tự định nghĩa các gói mới để tổ chức mã nguồn hợp lý
@@ -71,7 +79,9 @@ Ví dụ:
 
     -   Từ khoá <b>Import</b>: để sử dụng các lớp được định nghĩa trong các package khác
 
-    -   Ví dụ:  <img src="https://i.imgur.com/7Cgqfo7.png" alt="" width="40%">
+    -   Ví dụ: <br>
+    <img src="https://i.imgur.com/7Cgqfo7.png" alt="" width="40%">
+    <hr>
 <h3>2. Static</h3>
 
     -   Từ khoá <b>static</b> dùng để khai báo các thuộc tính/ phương thức của lớp (khác của đối tượng)
@@ -111,6 +121,6 @@ Ví dụ:
 
 
 </pre>
-<button style="position: fixed; bottom: 0; right: 0"><a href="#top">Go to Top</a></button>
+<button style="position: fixed; bottom: 0; left: 0"><a href="#top">Go to Top</a></button>
 </body>
 </html>
