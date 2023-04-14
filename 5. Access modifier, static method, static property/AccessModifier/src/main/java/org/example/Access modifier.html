@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        /**{*/
+        /*    border: 1px solid;*/
+        /*}*/
         body{
             font-family: Arial;
             font-size: 110%;
             max-width: 1000px;
             margin: auto    ;
             background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+
         }
+
 
 
     </style>
@@ -28,16 +33,23 @@ Access modifier là các từ khoá được sử dụng để quy định mức
 -   public: có thể truy cập từ bất cứ đâu;
 -   private: các phương thức và thuộc tính chỉ được phép truy xuất trong cùng một lớp;
 -   protected: các PT và thuộc tính được phép truy xuất trong cùng một lớp và ở các lớp con (kế thừa);
--   default: nếu không có access modifier thì mức default sẽ được áp dụng. Lớp và các thành phần của lớp được truy xuất ở những nơi trong cùng một package
+-   default: nếu không có access modifier thì mức default sẽ được áp dụng. Lớp và các thành phần của lớp
+    được truy xuất ở những nơi trong cùng một package
 -   <b>Local Variables và Access Modifiers</b>:
     +   không thể áp dụng access modifier cho các biến cục bộ
     +   chỉ áp dụng được modifier là <b>final</b>
-Ví dụ:
-</pre>
 
-<img src="https://i.imgur.com/4ILyBkC.png" alt="" width="40%"><br>
-<p>Tổng hợp các mức truy cập</p>
-<img src="https://i.imgur.com/6w2YlYD.png" alt="" width="40%">
+</pre>
+<div style="display: flex">
+    <div style="width: 50%; height: 300px;">
+        <div style="width: 100%;">Ví dụ:</div>
+        <div style="width: 100%"><img src="https://i.imgur.com/4ILyBkC.png" alt="" width="100%" height="250px"></div>
+    </div>
+    <div style="width: 50%; height: 300px;">
+        <div style="width: 100%;">Tổng hợp các mức truy cập</div>
+        <div style="width: 100%"><img src="https://i.imgur.com/6w2YlYD.png" alt="" width="100%" height="250px"></div>
+    </div>
+</div>
 <hr>
 <pre id="get">
 -   Khai báo getter/ setter
