@@ -44,6 +44,9 @@ public class Student {
     rollno = r;
     name = n;
   }
+//  static void change(){
+//    college = "NgoaiNgu";           //Phương thức static truy cập vào biến static và thay đổi giá trị của nó
+//  }
   void display() {
     System.out.println(rollno + " " + name + " " + college);
   }
