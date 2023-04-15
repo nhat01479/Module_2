@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c032564-1434-4544-bad6-7f33f6527b3e" name="Changes" comment="5. Access modifier, static method, static property" />
+    <list default="true" id="5c032564-1434-4544-bad6-7f33f6527b3e" name="Changes" comment="5. Access modifier, static method, static property">
+      <change beforePath="$PROJECT_DIR$/AccessModifier/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/AccessModifier/src/main/java/org/example/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +22,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Module_2/5. Access modifier, static method, static property",
+    "last_opened_file_path": "E:/Git/Module_2/5. Access modifier, static method, static property/AccessModifier",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -38,6 +40,7 @@
       <updated>1681434679106</updated>
       <workItem from="1681434680212" duration="54000" />
       <workItem from="1681444518920" duration="265000" />
+      <workItem from="1681522948440" duration="79000" />
     </task>
     <task id="LOCAL-00001" summary="5. Access modifier, static method, static property">
       <created>1681444651394</created>

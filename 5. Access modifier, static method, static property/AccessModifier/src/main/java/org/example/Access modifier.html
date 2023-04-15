@@ -26,6 +26,7 @@
     <h3><li><a href="#acm">Access modifier</a></li></h3>
     <h3><li><a href="#get">Getter/ Setter</a></li></h3>
     <h3><li><a href="#package">Package & Static method</a></li></h3>
+    <h3><li><a href="#nested">Nested Class & Local Class</a></li></h3>
 
 </ol>
 <pre id="acm">
@@ -36,6 +37,7 @@ Access modifier là các từ khoá được sử dụng để quy định mức
 -   default: nếu không có access modifier thì mức default sẽ được áp dụng. Lớp và các thành phần của lớp
     được truy xuất ở những nơi trong cùng một package
 -   <b>Local Variables và Access Modifiers</b>:
+    +   Biến local được khai báo trong các phương thức, hàm contructor hoặc trong các block.
     +   không thể áp dụng access modifier cho các biến cục bộ
     +   chỉ áp dụng được modifier là <b>final</b>
 
@@ -52,22 +54,26 @@ Access modifier là các từ khoá được sử dụng để quy định mức
 </div>
 <hr>
 <pre id="get">
--   Khai báo getter/ setter
-    + getter:       public returnType getPropertyName() {}    //return this.property = property;
-    + setter:       public void setPropertyName()	{}    //this.property = property;
-    + boolean:      public boolean isPropertyName()	{}
+-   Data field encapsulation (bao gói trường dữ liệu): hạn chế quyền truy cập trực tiếp vào các thuộc tính/ phương thức
+của đối tượng bằng cách sử dụng từ khoá PRIVATE.
+-   Khai báo các phương thức để kiểm soát việc truy cập vào các thuộc tính của đối tượng:
+    Thay đổi giá trị của thuộc tính ==> setter: setName(), setAge(), ...
+    Lấy về giá trị của thuộc tính ==> getterL getName(), getAge(), ...
+
+    + getter:       public returnType getPropertyName(){}                //return this.property = property;
+    + setter:       public void setPropertyName(dataType property){}    //this.property = property;
+    + boolean:      public boolean isPropertyName(){}
 
 -   this:   Đại diện cho đối tượng hiện tại
-            Nếu muốn constructor nào đó gọi đến một constructor khác
+            Nếu muốn constructor nào đó gọi đến một constructor khác thì sử dụng this(tham số);
             Sử dụng this.field để phân biệt field với tham số của phương thức và các biến cục bộ khác
-            truy xuất tới các thành phần của đối tượng hiện tại
--   Data field encapsulation (bao gói trường dữ liệu): hạn chế quyền truy cập trực tiếp vào các thuộc tính/ phương thức
-    của đối tượng bằng cách sử dụng từ khoá PRIVATE.
+            Truy xuất tới các thành phần của đối tượng hiện tại
+
 </pre>
 <hr>
 <pre>
     <h3 id="package">1. Package (gói)</h3>
-    -   Là cách phân loại các lớp và interface thành các nhóm có liên quan đến nhau và tổ chức chúng thành các đơn vị để quản lý
+    -   Là cách phân loại các lớp và interface thành các nhóm có liên quan đến nhau và tổ chức chúng thành các đơn vị để quản lý.
     -   java.io, java.net, java.security, java.util, ...
     -   Có thể tự định nghĩa các gói mới để tổ chức mã nguồn hợp lý
     <b>Tính chất của package</b>:
@@ -95,7 +101,6 @@ Access modifier là các từ khoá được sử dụng để quy định mức
     <img src="https://i.imgur.com/7Cgqfo7.png" alt="" width="40%">
     <hr>
 <h3>2. Static</h3>
-
     -   Từ khoá <b>static</b> dùng để khai báo các thuộc tính/ phương thức của lớp (khác của đối tượng)
     -   Các thành phần static TRỰC THUỘC LỚP thay vì trực thuộc đối tượng.
     -   Biến <b>static</b> còn gọi là biến của lớp (class variable).
@@ -124,13 +129,18 @@ Access modifier là các từ khoá được sử dụng để quy định mức
     ==> truy xuất method: System.out.print(MyClass.getNumber);
 
     -   MỘT SỐ RÀNG BUỘC:
-        +   Phương thức <b>static</b>:  chỉ có thể gọi các phương thức
-                                        chỉ có thể truy xuất các biến static
-                                        không thể sử dụng <b>this/ super</b>
-        +   Có thể khởi tạo biến static thông qua khôí khởi tạo static <br>
+        +   Phương thức <b>static</b>: có thể truy cập biến static và thay đổi giá trị của nó
+                                     . chỉ có thể gọi các phương thức static khác, không thể gọi các phương thức nonstatic
+                                     . chỉ có thể truy xuất các biến static, không thể truy xuất các biến instance (nonstatic)
+                                     . không thể sử dụng <b>this/ super</b>
+        +   Có thể khởi tạo biến static thông qua khối khởi tạo static <br>
     <img src="https://i.imgur.com/WWiSEJ1.png" alt="" width="30%">
+  <hr>
+  <h3 id="nested">Nested Class (lớp lồng nhau)</h3>
 
+  - Là 1 lớp được khai báo trong lớp khác.
 
+  - <b>Khi nào sử dụng Nested Class:</b>
 
 </pre>
 <button style="position: fixed; bottom: 0; left: 0"><a href="#top">Go to Top</a></button>
