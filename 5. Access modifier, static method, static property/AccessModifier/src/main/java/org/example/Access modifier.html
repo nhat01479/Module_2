@@ -23,13 +23,55 @@
 <body>
 <h1 style="text-align: center" id="top">Access modifier, static method, static property</h1>
 <ol type="I">
+    <h3><li><a href="#thamchieu">Tham trị và tham chiếu</a></li></h3>
+    <h3><li><a href="#bien">Biến trong java</a></li></h3>
     <h3><li><a href="#acm">Access modifier</a></li></h3>
-    <h3><li><a href="#get">Getter/ Setter</a></li></h3>
+    <h3><li><a href="#get">Tính đóng gói (Encapsulation) - Getter/ Setter</a></li></h3>
     <h3><li><a href="#package">Package & Static method</a></li></h3>
     <h3><li><a href="#nested">Nested Class & Local Class</a></li></h3>
-
 </ol>
+<hr>
+<pre id="thamchieu">
+  <h3>Tham trị và tham chiếu</h3>
+<b>1. Tham trị</b>
+  -   Các biêến thuộc kiểu DL nguyên thủy: boolean, char, byte, short, int, long, float, double
+  ==> lưu giá trị của chúng ở bộ nhớ STACK.
+  -   Truyền giá trị của biến (không phải địa chỉ ô nhớ) ==> phương thức tạo ra địa chỉ ô nhớ mới
+để lưu giá trị này ==> bên trong thay đổi, bên ngoài không đổi
+<b>2. Tham chiếu</b>
+  -   Các biến thuộc kiểu dữ liệu tham chiếu lưu trữ <b>tham chiếu</b> đến đối tượng (đối tượng được lưu trong bộ nhớ HEAP).
+  -   Truyền địa chỉ ô nhớ ==> bên trong thay đổi thì bên ngoài thay đổi
+</pre>
+<hr>
+<pre>
+  <h3>Biến trong Java</h3>
+  <b>1. Biến local (biến trong block code</b>
+  -   Biến local được khai báo trong các phương thức, hàm contructor hoặc trong các block.
+  -   Sẽ bị phá hủy khi kết thúc các phương thức, contructor và block.
+  -   Không được sử dụng "access modifier" khi khai báo biến local.
+  -   Các biến local được lưu trên vùng nhớ stack của bộ nhớ.
+  -   Cần khởi tạo giá trị mặc định cho biến local trước khi có thể sử dụng.
+  <b>2. Biến instance (biến toàn cục)</b>
+  -   Biến instance được khai báo trong một lớp(class), bên ngoài các phương thức, constructor và các block.
+  -   Biến instance được lưu trong bộ nhớ heap.
+  -   Biến instance được tạo khi một đối tượng được tạo bằng việc sử dụng từ khóa “new” và sẽ bị phá hủy khi đối tượng bị phá hủy.
+  -   Biến instance có thể được sử dụng bởi các phương thức, constructor, block, ... Nhưng nó phải được sử dụng thông qua một đối tượng cụ thể
+  -   Bạn được phép sử dụng "access modifier" khi khai báo biến instance, mặc định là "default".
+  -   Biến instance có giá trị mặc định phụ thuộc vào kiểu dữ liệu của nó. Ví dụ nếu là kiểu int, short, byte thì giá trị mặc định là 0, kiểu double thì là 0.0d, ...
+  Vì vậy, bạn sẽ không cần khởi tạo giá trị cho biến instance trước khi sử dụng.
+  -   Bên trong class mà bạn khai báo biến instance, bạn có thể gọi nó trực tiếp bằng tên khi sử dụng ở khắp nới bên trong class đó.
+  <b>2. Biến static (biến của lớp)</b>
+-   Biến static được khai báo trong một class với từ khóa "static", phía bên ngoài các phương thức, constructor và block.
+-   Sẽ chỉ có duy nhất một bản sao của các biến static được tạo ra, dù bạn tạo bao nhiêu đối tượng từ lớp tương ứng.
+-   Biến static được lưu trữ trong bộ nhớ static riêng.
+-   Biến static được tạo khi chương trình bắt đầu chạy và chỉ bị phá hủy khi chương trình dừng.
+-   Giá trị mặc định của biến static phụ thuộc vào kiểu dữ liệu bạn khai báo tương tự biến instance.
+-   Biến static được truy cập thông qua tên của class chứa nó, với cú pháp: TenClass.tenBien.
+-   Trong class, các phương thức sử dụng biến static bằng cách gọi tên của nó khi phương thức đó cũng được khai báo với từ khóa "static".
+</pre>
+<hr>
 <pre id="acm">
+  <h3>Access modifier</h3>
 Access modifier là các từ khoá được sử dụng để quy định mức độ truy cập đến lớp và các thành phần của lớp
 -   public: có thể truy cập từ bất cứ đâu;
 -   private: các phương thức và thuộc tính chỉ được phép truy xuất trong cùng một lớp;
@@ -54,6 +96,7 @@ Access modifier là các từ khoá được sử dụng để quy định mức
 </div>
 <hr>
 <pre id="get">
+  <h3>Tính đóng gói (Encapsulation) - Getter/ Sette</h3>
 -   Data field encapsulation (bao gói trường dữ liệu): hạn chế quyền truy cập trực tiếp vào các thuộc tính/ phương thức
 của đối tượng bằng cách sử dụng từ khoá PRIVATE.
 -   Khai báo các phương thức để kiểm soát việc truy cập vào các thuộc tính của đối tượng:
@@ -141,6 +184,33 @@ của đối tượng bằng cách sử dụng từ khoá PRIVATE.
   - Là 1 lớp được khai báo trong lớp khác.
 
   - <b>Khi nào sử dụng Nested Class:</b>
+    + Tạo ra 1 lớp có liên quan đến lớp bên ngoài mà không cần tạo 1 lớp mới.
+    + Tăng tính bao gói (encapsulation) khi các thành phần của lớp bên trong chỉ được sử dụng bởi lớp bao nó.
+    + Giúp mã nguồn dễ đọc, dễ bảo trì hơn.
+  -   Nested class chia thành 2 loại:
+
+<b>1. static (static nested class)</b>
+
+-   Trực thuộc lớp bên ngoài (thay vì trực thuộc đối tượng của lớp bên ngoài.
+-   không thể truy xuất đến các thành phần của lớp bên ngoài.
+-   Sử dụng tên của lớp bên ngoài để truy cập đến lớp bên trong.
+-   OuterClass.StaticNestedClass nestedObject = new OuterClass.StaticNestedClass();
+
+<b>2. non-static (Inner class)</b>
+
+-   Trực thuộc 1 đối tượng của lớp bên ngoài.
+-   Có thể truy xuất đến các thành phần của lớp bên ngoài.
+-   Sử dụng tham chiếu của một đối tượng của lớp bên ngoài để truy xuất đến Inner class.
+-   Có thể đặt <b>private/ protected</b>. Nếu không muốn các đối tượng bên ngoài truy cập vào bên trong thì có thể khai báo lớp đó là <b>private</b>
+
+<b>3. Local class (lớp địa phương)</b>
+
+-   Lớp được khai báo và sử dụng trong 1 khối lệnh.
+-   Không thể sử dụng bên ngoài khối lệnh được khai báo.
+
+<b>4. Anonymous class</b>
+<hr>
+
 
 </pre>
 <button style="position: fixed; bottom: 0; left: 0"><a href="#top">Go to Top</a></button>
