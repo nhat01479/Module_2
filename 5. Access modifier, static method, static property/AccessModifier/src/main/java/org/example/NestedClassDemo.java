@@ -11,6 +11,9 @@ public class NestedClassDemo {
     // Sau đó tạo 1 đối tượng của lớp bên trong
     OuterClass.InnerClass inner = outer.new InnerClass();
     inner.innerShow();
+    //hoặc
+    OuterClass.InnerClass inner2 = new OuterClass(). new InnerClass();
+    inner2.innerShow();
 
     //static nested class: có thể truy cập lớp bên trong mà không cần tạo một đối tượng của lớp bên ngoài
     OuterClass.StaticNestedClass nestedClass = new OuterClass.StaticNestedClass();
