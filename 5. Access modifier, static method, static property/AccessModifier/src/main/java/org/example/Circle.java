@@ -7,6 +7,7 @@ public class Circle {
     Circle circle1 = new Circle();
     System.out.println(circle1.getRadius());
     System.out.println(circle1.getArea());
+    System.out.println(circle1);
   }
 
   private double radius;
@@ -27,5 +28,13 @@ public class Circle {
 
   public double getArea() {
     return radius * radius * Math.PI;
+  }
+
+  @Override
+  public String toString() {
+    return "Circle{" +
+            "radius=" + radius +
+            ", color='" + color + '\'' +
+            '}';
   }
 }
