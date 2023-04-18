@@ -17,9 +17,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Module_2/6. Inheritance",
+    "last_opened_file_path": "D:/Module_2/5. Access modifier, static method, static property",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -33,6 +34,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681807563972</updated>
       <workItem from="1681807564975" duration="19000" />
+      <workItem from="1681809157964" duration="46000" />
     </task>
     <servers />
   </component>
