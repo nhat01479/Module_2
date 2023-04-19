@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="42185e23-18eb-432a-9ce9-037028314ac0" name="Changes" comment="" />
+    <list default="true" id="42185e23-18eb-432a-9ce9-037028314ac0" name="Changes" comment="Kế thừa">
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../5. Access modifier, static method, static property/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +16,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2OanT0Z0VMxskKD0YgiKzTavLOf" />
   <component name="ProjectViewState">
@@ -20,7 +34,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Module_2/5. Access modifier, static method, static property",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -35,10 +54,31 @@
       <updated>1681807563972</updated>
       <workItem from="1681807564975" duration="19000" />
       <workItem from="1681809157964" duration="46000" />
+      <workItem from="1681821931636" duration="1102000" />
+      <workItem from="1681823583358" duration="98000" />
+      <workItem from="1681823706497" duration="461000" />
+      <workItem from="1681824180883" duration="9000" />
+      <workItem from="1681824201872" duration="90000" />
+      <workItem from="1681824320202" duration="62000" />
+      <workItem from="1681825753921" duration="254000" />
+      <workItem from="1681826053632" duration="464000" />
+      <workItem from="1681826577742" duration="857000" />
     </task>
+    <task id="LOCAL-00001" summary="Kế thừa">
+      <created>1681823227397</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681823227397</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Kế thừa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kế thừa" />
   </component>
 </project>
