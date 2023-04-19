@@ -61,7 +61,7 @@ Tên lớp abstract và phương thức abstract được in nghiêng
 + Định nghĩa 1 interface là tạo ra 1 kiểu DL mới.
 + Không thể tạo đối tượng interface ==> vì interface là trừu tượng
 + Interface KHÔNG THỂ CHỨA các phương thức KHÔNG ABSTRACT (k chứa các phương thứ  có phần thân).
-+ Khi 1 lớp triển khái interface thì cần triển khai tất cả phương thức được khai báo trong interface đó.
++ Khi 1 lớp triển khai interface thì cần triển khai tất cả phương thức được khai báo trong interface đó.
 + Interface có thể thiết kế để khai báo các phương thức chung cho các lớp KHÔNG LIÊN QUAN với nhau KHÁC VỚI abstract class, được kế thừa bởi các lớp có liên quan với nhau).
 + Interface bổ sung cho việc Java không hỗ trợ đa kế thừa.
 
@@ -82,7 +82,7 @@ return "Flying with wings";
 -   Kế thừa interface
 + Một interface có thể kế thừa interface khác.
 => thừa hưởng các phương thức và hằng số từ interface cha
-+ Interface con có th khai báo thêm thành phần mới
++ Interface con có thể khai báo thêm thành phần mới
 + Từ khoá extends để kế thừa interface
 
 public interface AnimalFlyable extends Flyable{}
