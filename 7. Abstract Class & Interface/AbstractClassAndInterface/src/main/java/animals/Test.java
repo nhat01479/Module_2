@@ -11,7 +11,7 @@ public class Test {
         for (Animal animal: animals){
             System.out.println(animal.makeSound());
             if (animal instanceof Chicken){
-                Edible edible = (Chicken) animal;
+                Edible edible = (Chicken) animal;       //Animal không implement Edible nên không gọi trực tiếp howtoEat() được
                 System.out.println(edible.howtoEat());
             }
             if (animal instanceof Tiger){
@@ -19,7 +19,8 @@ public class Test {
                 System.out.println((edible.howtoEat()));
             }
         }
+        System.out.println();
         Fruit apple = new Apple();
-        System.out.println(apple.howtoEat());
+        System.out.println(apple.howtoEat());   //Fruit có implement nên gọi được howtoEat
     }
 }
