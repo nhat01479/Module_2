@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42185e23-18eb-432a-9ce9-037028314ac0" name="Changes" comment="Kế thừa">
-      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../5. Access modifier, static method, static property/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/AbstractClassAndInterface/src/main/java/resizeable/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/AbstractClassAndInterface/src/main/java/resizeable/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/AbstractClassAndInterface/src/main/java/resizeable/Resizeable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/AbstractClassAndInterface/src/main/java/resizeable/Shape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThucHanh/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ThucHanh/src/main/java/org/example/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThucHanh/src/main/java/org/example/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/ThucHanh/src/main/java/org/example/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/AbstractClassAndInterface/src/main/java/animals/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/AbstractClassAndInterface/src/main/java/animals/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +40,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/test",
+    "last_opened_file_path": "E:/Git/Module_2/6. Inheritance",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -44,6 +49,26 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Square" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Square" />
+      <module name="ThucHanh" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Square" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,6 +88,7 @@
       <workItem from="1681825753921" duration="254000" />
       <workItem from="1681826053632" duration="464000" />
       <workItem from="1681826577742" duration="857000" />
+      <workItem from="1681915609030" duration="314000" />
     </task>
     <task id="LOCAL-00001" summary="Kế thừa">
       <created>1681823227397</created>
