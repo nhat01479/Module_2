@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c032564-1434-4544-bad6-7f33f6527b3e" name="Changes" comment="5. Access modifier, static method, static property">
-      <change beforePath="$PROJECT_DIR$/AccessModifier/src/main/java/org/example/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/example/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AccessModifier/src/main/java/org/example/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/example/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../6. Inheritance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../6. Inheritance/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5c032564-1434-4544-bad6-7f33f6527b3e" name="Changes" comment="." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,8 +22,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Module_2/6. Inheritance/Triangle",
+    "last_opened_file_path": "D:/Module_2/6. Inheritance/PointAndMoveablePoint",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,7 +70,7 @@
       <workItem from="1681694330287" duration="2948000" />
       <workItem from="1681711233013" duration="22000" />
       <workItem from="1681711264997" duration="31000" />
-      <workItem from="1681809204661" duration="902000" />
+      <workItem from="1681809204661" duration="4505000" />
     </task>
     <task id="LOCAL-00001" summary="5. Access modifier, static method, static property">
       <created>1681444651394</created>
@@ -82,7 +79,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681444651394</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="5. Access modifier, static method, static property">
+      <created>1681814123235</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681814123235</updated>
+    </task>
+    <task id="LOCAL-00003" summary=".">
+      <created>1681814143791</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681814143791</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,6 +101,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="5. Access modifier, static method, static property" />
-    <option name="LAST_COMMIT_MESSAGE" value="5. Access modifier, static method, static property" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
