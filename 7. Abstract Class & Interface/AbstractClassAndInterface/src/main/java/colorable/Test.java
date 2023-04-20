@@ -8,6 +8,7 @@ public class Test {
     shapes[1] = new Rectangle(5,10);
     shapes[2] = new Square(20);
     for (Shape shape: shapes){
+      System.out.println(shape.toString());
       if (shape instanceof Colorable){
         ((Colorable) shape).howToColor();
       }
