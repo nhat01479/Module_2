@@ -4,26 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="727c3c0d-8dc3-4c5e-a785-4f25d75f54d4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/src/main/java/org/example/Calculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/src/main/java/org/example/CalculatorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/src/main/java/refactoring/FizzBuzz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/src/main/java/refactoring/FizzBuzzTest.java" beforeDir="false" />
+    <list default="true" id="727c3c0d-8dc3-4c5e-a785-4f25d75f54d4" name="Changes" comment="[Thực hành] Refactoring - đổi tên biến và tách hằng">
+      <change afterPath="$PROJECT_DIR$/CleanCodeRefactoring/src/main/java/refactoring/method/Cylinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CleanCodeRefactoring/src/main/java/refactoring/method/CylinderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2Oflz0LqdLabOjXuowZ6lWcy5lb" />
   <component name="ProjectViewState">
@@ -34,6 +40,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/Module_2/8. Clean Code & Refactoring",
     "node.js.detected.package.eslint": "true",
@@ -44,6 +51,46 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.CylinderTest.testGetVolume1And2">
+    <configuration name="CylinderTest.testGetVolume0And0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CleanCodeRefactoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="refactoring.method.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="refactoring.method" />
+      <option name="MAIN_CLASS_NAME" value="refactoring.method.CylinderTest" />
+      <option name="METHOD_NAME" value="testGetVolume0And0" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CylinderTest.testGetVolume1And2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CleanCodeRefactoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="refactoring.method.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="refactoring.method" />
+      <option name="MAIN_CLASS_NAME" value="refactoring.method.CylinderTest" />
+      <option name="METHOD_NAME" value="testGetVolume1And2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CylinderTest.testGetVolume1And2" />
+        <item itemvalue="JUnit.CylinderTest.testGetVolume0And0" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,10 +101,45 @@
       <updated>1681959775703</updated>
       <workItem from="1681959776687" duration="630000" />
       <workItem from="1681963946902" duration="211000" />
+      <workItem from="1681964171868" duration="1023000" />
     </task>
+    <task id="LOCAL-00001" summary=".">
+      <created>1681964207718</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681964207718</updated>
+    </task>
+    <task id="LOCAL-00002" summary=".">
+      <created>1681964226638</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681964226638</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[Thực hành] Refactoring - đổi tên biến và tách hằng">
+      <created>1681964343497</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681964343497</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[Thực hành] Refactoring - đổi tên biến và tách hằng">
+      <created>1681964452667</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681964452667</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="." />
+    <MESSAGE value="[Thực hành] Refactoring - đổi tên biến và tách hằng" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Thực hành] Refactoring - đổi tên biến và tách hằng" />
   </component>
 </project>
