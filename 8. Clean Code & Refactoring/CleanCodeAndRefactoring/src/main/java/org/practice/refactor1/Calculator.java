@@ -1,4 +1,4 @@
-package org.example;
+package org.practice.refactor1;
 
 public class Calculator {
 
