@@ -1,0 +1,26 @@
+1.
+Kiểm thử là các nghiên cứu được thực hiện để khẳng định chất lượng của sản phẩm phần mềm,
+Các kỹ thuật kiểm thử gồm việc thực thi chương trình để tìm ra các lỗi
+2.
+Kiểm thử giúp quản lý được rủi ro của sản phẩm
+3. Hai thao tác quan trọng khi kiểm thử là:
+ Thiết kế ca kiểm thử
+ Thực thi ca kiểm thử
+4.Các vai trò tham gia trong quá trình kiểm thử
+Customer
+ScrumMaster
+Tester
+5.
+TDD bao gồm các giai đoạn: 1/Viêt các bài kiểm thử 2/Viết mã nguồn 3/Tái cấu trúc mã nguồn
+Test First có nghĩa là việc lập trình bắt đầu bằng cách viết các bài kiểm thử trước khi bắt tay vào viết mã nguồn của chương trình
+TDD bao gồm nhiều giai đoạn nhỏ lặp đi lặp lại
+6. Kiêm thử đơn vị ==> chi tiết
+7.Kiểm thử đơn vị được thực thi bởi ai?
+Lập trình viên
+8.Kiểm thử tự động là hình thức lập trình viên thực hiện coding để tự động thực thi các test-case.
+False
+9.
+Refactoring là quá trình tái cấu trúc mã nguồn mà không ảnh hưởng đến hành vi của chương trình nhằm giúp cho mã nguồn trở nên tốt hơn.
+10.
+
+
