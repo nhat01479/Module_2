@@ -1,4 +1,4 @@
-package refactoring;
+package refactoring.variable;
 
 public class FizzBuzz {
     public static String fizzBuzz(int number){
