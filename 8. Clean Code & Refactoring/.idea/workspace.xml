@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="727c3c0d-8dc3-4c5e-a785-4f25d75f54d4" name="Changes" comment="" />
+    <list default="true" id="727c3c0d-8dc3-4c5e-a785-4f25d75f54d4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/src/main/java/org/example/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/src/main/java/org/example/CalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/src/main/java/refactoring/FizzBuzz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../7. Abstract Class &amp; Interface/CleanCodeRefactoring/src/main/java/refactoring/FizzBuzzTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +32,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/Module_2/8. Clean Code & Refactoring",
@@ -40,6 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681959775703</updated>
       <workItem from="1681959776687" duration="630000" />
+      <workItem from="1681963946902" duration="211000" />
     </task>
     <servers />
   </component>
