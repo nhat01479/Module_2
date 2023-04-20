@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42185e23-18eb-432a-9ce9-037028314ac0" name="Changes" comment="Kế thừa">
+    <list default="true" id="42185e23-18eb-432a-9ce9-037028314ac0" name="Changes" comment=".">
       <change afterPath="$PROJECT_DIR$/../8. Clean Code &amp; Refactoring/CleanCodeRefactoring/src/main/java/refactoring/baitap/TennisGame.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../8. Clean Code &amp; Refactoring/CleanCodeRefactoring/src/main/java/refactoring/baitap/TennisGameTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../8. Clean Code &amp; Refactoring/CleanCodeRefactoring/src/main/java/refactoring/baitap/TestTennisGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../5. Access modifier, static method, static property/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../8. Clean Code &amp; Refactoring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../8. Clean Code &amp; Refactoring/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Module_2/7. Abstract Class & Interface",
+    "last_opened_file_path": "D:/Module_2/6. Inheritance",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,6 +71,7 @@
       <workItem from="1681952614365" duration="238000" />
       <workItem from="1681976504262" duration="1379000" />
       <workItem from="1681981832689" duration="202000" />
+      <workItem from="1681982051897" duration="509000" />
     </task>
     <task id="LOCAL-00001" summary="Kế thừa">
       <created>1681823227397</created>
@@ -81,7 +80,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681823227397</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Point2DAndPoint3D">
+      <created>1681982448176</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681982448176</updated>
+    </task>
+    <task id="LOCAL-00003" summary=".">
+      <created>1681982464107</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681982464107</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +102,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Kế thừa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kế thừa" />
+    <MESSAGE value="Point2DAndPoint3D" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
