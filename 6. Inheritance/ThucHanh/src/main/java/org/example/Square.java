@@ -6,7 +6,7 @@ public class Square extends Rectangle{
         Square square = new Square();
         System.out.println(square);
 
-        square = new Square(2);
+        square = new Square(2.3);
         System.out.println(square);
         System.out.println("Perimeter = " + square.getPerimeter() + " - Area = " + square.getArea());
 
@@ -32,17 +32,7 @@ public class Square extends Rectangle{
     }
 
     @Override
-    public void setWidth(double width) {
-        setWidth(width);
-    }
-
-    @Override
-    public void setLength(double length) {
-        setLength(length);
-    }
-
-    @Override
     public String toString() {
-        return "A Square with side = " + getSide() + ", which is a subclass of Rectangle";
+        return "A Square with side = " + getSide() + ", which is a subclass of " + super.toString();
     }
 }
