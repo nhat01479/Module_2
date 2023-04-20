@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="727c3c0d-8dc3-4c5e-a785-4f25d75f54d4" name="Changes" comment="[Thực hành] Refactoring - tách phương thức">
-      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../6. Inheritance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../6. Inheritance/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanCodeRefactoring/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanCodeRefactoring/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanCodeRefactoring/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanCodeRefactoring/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanCodeRefactoring/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanCodeRefactoring/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanCodeRefactoring/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanCodeRefactoring/src/main/java/org/example/Calculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanCodeRefactoring/src/main/java/org/example/CalculatorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanCodeRefactoring/src/main/java/refactoring/method/Cylinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanCodeRefactoring/src/main/java/refactoring/method/CylinderTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanCodeRefactoring/src/main/java/refactoring/variable/FizzBuzz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanCodeRefactoring/src/main/java/refactoring/variable/FizzBuzzTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="727c3c0d-8dc3-4c5e-a785-4f25d75f54d4" name="Changes" comment="[Thực hành] Refactoring - tách phương thức" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +38,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Module_2/8. Clean Code & Refactoring/.idea/8. Clean Code & Refactoring.iml",
+    "last_opened_file_path": "E:/Git/Module_2/8. Clean Code & Refactoring",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -118,6 +99,7 @@
       <workItem from="1681963946902" duration="211000" />
       <workItem from="1681964171868" duration="5917000" />
       <workItem from="1681979002028" duration="3043000" />
+      <workItem from="1681993993112" duration="195000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1681964207718</created>
