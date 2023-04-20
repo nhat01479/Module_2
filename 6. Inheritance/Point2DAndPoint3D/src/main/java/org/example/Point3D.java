@@ -31,6 +31,6 @@ public class Point3D extends Point2D{
 
     @Override
     public String toString() {
-        return "Toạ độ (x, y, z) = (" + super.getX() + ", " + super.getY() + ", " + z + ")";
+        return "Toạ độ (x, y, z) = (" + this.getX() + ", " + this.getY() + ", " + this.z + ")";
     }
 }

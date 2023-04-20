@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42185e23-18eb-432a-9ce9-037028314ac0" name="Changes" comment="Kế thừa">
+      <change afterPath="$PROJECT_DIR$/../8. Clean Code &amp; Refactoring/CleanCodeRefactoring/src/main/java/refactoring/baitap/TennisGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../8. Clean Code &amp; Refactoring/CleanCodeRefactoring/src/main/java/refactoring/baitap/TennisGameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../8. Clean Code &amp; Refactoring/CleanCodeRefactoring/src/main/java/refactoring/baitap/TestTennisGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../5. Access modifier, static method, static property/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8. Clean Code &amp; Refactoring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../8. Clean Code &amp; Refactoring/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +71,8 @@
       <workItem from="1681826577742" duration="857000" />
       <workItem from="1681899992782" duration="486000" />
       <workItem from="1681952614365" duration="238000" />
+      <workItem from="1681976504262" duration="1379000" />
+      <workItem from="1681981832689" duration="202000" />
     </task>
     <task id="LOCAL-00001" summary="Kế thừa">
       <created>1681823227397</created>

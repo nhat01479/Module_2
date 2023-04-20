@@ -39,7 +39,7 @@ public class Point2D {
 
     @Override
     public String toString() {
-        return "Toạ độ (x, y) = (" + x + ", " + y + ")";
+        return "Toạ độ (x, y) = (" + this.x + ", " + this.y + ")";
     }
 
 }
