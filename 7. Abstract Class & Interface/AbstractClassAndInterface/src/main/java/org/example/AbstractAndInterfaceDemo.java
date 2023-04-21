@@ -20,6 +20,7 @@ Tên lớp abstract và phương thức abstract được in nghiêng
 - Lớp abstract có thể có các thuộc tính và phương thức bình thường
 - Lớp chứa phương thức abstract thì lớp đó là abstract
 - Lớp con không phải abstract kế thừa lớp abstract phải implement tất cả phương thức abstract của lớp cha
+- Một lớp abstract kế thừa từ một lớp cha abstract thì có thể không implement các phương thức abstract của lớp cha
 - Lớp abstract không thể là final
 - Phương thức abstract không thể là final
 
@@ -41,7 +42,7 @@ Tên lớp abstract và phương thức abstract được in nghiêng
 + Các lớp, các phương thức có thể được sử dụng kết hợp với nhau theo nhiều cách khác nhau, do đó sự rõ ràng là cần thiết
 + Các thuộc tính trong một lớp nên độc lập với nhau, tránh thừa dữ liệu.
 
-- Interface (kế thừa) or Aggregation (tập hợp).
+- Inheritance (kế thừa) or Aggregation (tập hợp).
         [is-a]              [has-a]
 - Interface or Abstract class
     [is-a]        [can-do]
