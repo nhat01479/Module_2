@@ -1,4 +1,4 @@
--	Cấu trúc dữ liệu: là hình thức tổ chức 1 nhóm dữ liệu
+-	Cấu trúc dữ liệu: là hình thức tổ chức 1 nhóm dữ liệu và cung cấp các phương thức để thao tác với các phần tử
 -	Các khái niệm: 
 	+	Container: lớp chứa dữ liệu
 	+	Element: các phần tử dữ liệu
@@ -7,7 +7,7 @@ Ví dụ:
 	+ Các phương thức được cung cấp để thực hiện các thao tác: thêm, xoá, duyệt, tìm kiếm phần tử
 -	Việc lựa chọn cấu trúc dữ liệu và thuật toán phù hợp là rất quan trọng đối với hiệu năng của ứng dụng.
 -	Các cấu trúc DL thông dụng:
-	+ Set (tập hợp): nhóm các phần tử trùng nhau
+	+ Set (tập hợp): nhóm các phần tử không trùng nhau
 	+ List (Danh sách): nhóm các phần tử có thể trùng nhau
 	+ Stack: Nhóm các phần tử theo trật tự first-in/last-out (vào trước/ ra sau)
 	+ Queue: Nhóm các phần tử theo trật tự first-in/first-out (vào trước/ra trước)
@@ -15,8 +15,29 @@ Ví dụ:
 	+ Tree (cây): Lưu trữ các phần tử theo mối quan hệ cha - con
 	+ Grap (đồ thị): lưu trữ các phần tử theo mqh mạng lưới
 
-----------------------------------------------
-Lớp ArrayList
+-------------------------------------------------------------------------
+					Java Collection
+
+-	Java cung cấp nhiều cấu trúc dữ liệu để tổ chức và thao tác với dữ liệu hiệu quả gọi là Java
+Collection Framework (thuộc gói java.util).
+
+-	Nó hỗ trợ 2 lọai container:
+
+	• Collection: lưu trữ tập các phần tử: List (danh sách) (Linked List, ArrayList, Vector), Set
+	• Map: lưu trữ các phần tử dạng cặp key/value.
+
+-	Thiết kếcủaJavaCollection:
+
+	• Các interfac mô tả các thao tác của từng loại cấu trúc dữ liệu
+	• Các abstract class triển khai các phương thức chung
+	• Các lớp triển khai các phương thức cụ thể của từng loại cấu trúc dữ liệu
+	• Interface Collection là interface gốc của tất cả các interface và lớp còn lại của Java Collection
+
+
+-------------------------------------------------------------------------
+			Lớp ArrayList	
+
+
 -Lưu trữ các phần tử trong 1 mảng.
 -Kích thước của mảng được điều chỉnh theo số lượng các phần tử
 
@@ -26,6 +47,8 @@ Lớp ArrayList
 ArrayList<data_type> listName = new ArrayList<>();
 
 + ArrayList listName = new ArrayList(); 
+
++ List<Integer> list = Arrays.asList(1,3,4,2,5);
 
 - Các thao tác cơ bản:
 + get(int index): lấy về phần tử thứ index.
@@ -40,13 +63,15 @@ ArrayList<data_type> listName = new ArrayList<>();
 + indexOf()
 + set(int index, E element):	thay đổi giá trị của phần tử tại vị trí index.
 + toArray()
-------------------------------------------------------
-Lớp LinkedList
+---------------------------------------------------------------------------------
+				Lớp LinkedList
+
 -Lưu trữ các phần tử sử dụng cơ chế liên kết (link)
 -Hoạt động dựa trên cơ chế liên kết giữa các Node
 -Mỗi Node chứa dữ liệu của node đó và liên kết đến node kế tiếp (mỗi node chứa giá trị của nó và tham chiếu đến phần tử tiếp theo)
 + head: phần tử đầu tiên (Node 1: chứa phần tử 1 và tham chiếu trỏ đến phần tử node 2)
 + tail: phần tử cuối cùng (Node n: chứa phần tử cuối và có tham chiếu trỏ đến null ==> không có phần tử kế tiếp)
+
 List<data_type> linkedList = new LinkedList<>();
 
 - Các thao tác:
@@ -71,3 +96,59 @@ List<data_type> linkedList = new LinkedList<>();
 Truy xuất ngẫu nhiên nhanh 		Truy xuất ngẫu nhiên chậm
 Thêm, xoá chậm 				    Thêm, xoá nhanh
 Dữ liệu thường xuyên sửa		Dữ liệu thường xuyên thêm, xoá 
+
+---------------------------------------------------------------------------------
+			Set (tập hợp)
+- Là cấu trúc dữ liệu lưu trữ các phần tử không trùng lặp
+- Có thể sử dụng 1 trong các lớp:
+	+ HashSet
+	+ LinkedHashSet
+	+ TreeSet
+
+	Set<data_type> set = new HashSet<>();
+
+---------------------------------------------------------------------------------
+
+			Generic
+
+- Là co chế cho phép sử dụng kiểu dữ liệu như là tham số
+- Có thể định nghĩa lớp và phương thức với 1 kiểu dữ liệu genẻic, sau đó compiler (trình biên dịch) 
+sẽ thay thế kiểu dữ liệu generic với 1 kiểu dữ liệu cụ thể
+- Ví dụ: 
+• Khai báo lớp ArrayList:
+				class ArrayList<E>{}
+
+• Sửdụng lớp ArrayList:
+				ArrayList<String> strings = new ArrayList<>();
+				ArrayList<Customer> customers = new ArrayList<>();
+	
+	• E đại diện cho một kiểu dữ liệu generic
+	• String và Customer là các kiểu dữ liệu cụ thể
+
+==> Lợi ích của generic:
++ Giúp phát hiện lỗi tại lúc biên dịch thay vì lúc runtime.
++ Generic cho phép quy định các kiểu dữ liệu được phép sử dụng ở trong 1 lớp hoặc phương thức
++ Nếu kiểu dữ liệu không phù hợp được sử dụng thì sẽ được phát hiện
+
+---------------
+Khai báo lớp và interface generic
+
+- Cú pháp:
+			• class ClassName<T>{}
+
+			• interface InterfaceName<T>{}
+
+		+ T là kiểu dữ liệu, có thể dùng chữ cái bất kỳ.
+
+- Generic với nhiều kiểu dữ liệu:
+
+			• class ClassName<K, V>{}
+
+- Phương thức generic:
+
+			
+			• static <T> data_type MethodName(){}
+
+- Ràng buộc cho kiểu Generic:
++ Có thể quy định kiểu genẻic là subtype của 1 kiểu dữ liệu khác
++ Ràng buộc này gọi là Bounded Type.
