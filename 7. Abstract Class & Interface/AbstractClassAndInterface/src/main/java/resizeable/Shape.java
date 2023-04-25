@@ -1,6 +1,8 @@
 package resizeable;
 
-public class Shape implements Resizeable{
+import java.util.Comparator;
+
+public abstract class Shape implements Resizeable {
   private String color = "green";
   private boolean filled = true;
 
@@ -32,9 +34,10 @@ public class Shape implements Resizeable{
   public void setFilled(boolean filled) {
     this.filled = filled;
   }
+  public abstract double getArea();
 
   @Override
   public String toString() {
-    return String.format("A Shape with color: %s, %s",getColor(),(isFilled() ? "filled" : "not filled"));
+    return String.format(" - Color: %s, %s",getColor(),(isFilled() ? "filled" : "not filled"));
   }
 }

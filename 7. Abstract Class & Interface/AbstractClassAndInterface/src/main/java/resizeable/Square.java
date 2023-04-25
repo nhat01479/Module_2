@@ -5,7 +5,7 @@ public class Square extends Shape implements Resizeable{
 
   @Override
   public void resize(double percent) {
-    this.side *= (percent/100);
+    this.side = this.side * (1 + percent / 100);
   }
 
   public Square() {
@@ -15,7 +15,7 @@ public class Square extends Shape implements Resizeable{
     this.side = side;
   }
 
-  public Square(String color, boolean filled, double side) {
+  public Square(double side, String color, boolean filled) {
     super(color, filled);
     this.side = side;
   }
@@ -36,6 +36,6 @@ public class Square extends Shape implements Resizeable{
 
   @Override
   public String toString() {
-    return String.format("A Square with side = %.2f, S = %.2f, P = %.2f",getSide(),getArea(),getPerimeter());
+    return String.format("A Square with                       side = %.2f, S = %.2f, P = %.2f",getSide(),getArea(),getPerimeter()) + super.toString();
   }
 }

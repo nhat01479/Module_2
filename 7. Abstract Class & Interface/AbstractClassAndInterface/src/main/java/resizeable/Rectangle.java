@@ -6,8 +6,8 @@ public class Rectangle extends Shape implements Resizeable{
 
   @Override
   public void resize(double percent) {
-    this.width *= (percent/100);
-    this.length *= (percent/100);
+    this.width = this.width * (1 + percent / 100);
+    this.length = this.length * (1 + percent / 100);
   }
 
   public Rectangle() {
@@ -50,6 +50,8 @@ public class Rectangle extends Shape implements Resizeable{
 
   @Override
   public String toString() {
-    return String.format("A Rectangle with length = %.2f and width = %.2f, S = %.2f, P = %.2f",getLength(),getWidth(),getArea(),getPerimeter());
+    return String.format("A Rectangle with length = %.2f and width = %.2f, S = %.2f, P = %.2f",getLength(),getWidth(),getArea(),getPerimeter()) + super.toString();
   }
+
+
 }

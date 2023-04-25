@@ -1,10 +1,12 @@
 package resizeable;
 
-public class Circle extends Shape implements Resizeable{
+public class Circle extends Shape implements Resizeable {
+
   private double radius = 1.0;
+
   @Override
   public void resize(double percent) {
-    this.radius *= (percent/100);
+    this.radius = this.radius * (1 + percent / 100);
   }
 
   public Circle() {
@@ -38,6 +40,7 @@ public class Circle extends Shape implements Resizeable{
 
   @Override
   public String toString() {
-    return String.format("A Circle with radius = %.2f, S = %.2f, P = %.2f",getRadius(),getArea(),getPerimeter());
+    return String.format("A Circle with                     radius = %.2f, S = %.2f, P = %.2f", getRadius(), getArea(),
+        getPerimeter()) + super.toString();
   }
 }
