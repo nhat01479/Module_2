@@ -1,0 +1,73 @@
+-	Cấu trúc dữ liệu: là hình thức tổ chức 1 nhóm dữ liệu
+-	Các khái niệm: 
+	+	Container: lớp chứa dữ liệu
+	+	Element: các phần tử dữ liệu
+Ví dụ: 
+	+ Lớp ArrayList là cấu trúc danh sách, lưu trữ nhiều giá trị.
+	+ Các phương thức được cung cấp để thực hiện các thao tác: thêm, xoá, duyệt, tìm kiếm phần tử
+-	Việc lựa chọn cấu trúc dữ liệu và thuật toán phù hợp là rất quan trọng đối với hiệu năng của ứng dụng.
+-	Các cấu trúc DL thông dụng:
+	+ Set (tập hợp): nhóm các phần tử trùng nhau
+	+ List (Danh sách): nhóm các phần tử có thể trùng nhau
+	+ Stack: Nhóm các phần tử theo trật tự first-in/last-out (vào trước/ ra sau)
+	+ Queue: Nhóm các phần tử theo trật tự first-in/first-out (vào trước/ra trước)
+	+ Map (bản đồ): lưu trữ các cặp key/value.
+	+ Tree (cây): Lưu trữ các phần tử theo mối quan hệ cha - con
+	+ Grap (đồ thị): lưu trữ các phần tử theo mqh mạng lưới
+
+----------------------------------------------
+Lớp ArrayList
+-Lưu trữ các phần tử trong 1 mảng.
+-Kích thước của mảng được điều chỉnh theo số lượng các phần tử
+
+
++ List<data_type> listName = new ArrayList<>(); ==> tạo mảng arrayList chứa kiểu dữ liệu String
+
+ArrayList<data_type> listName = new ArrayList<>();
+
++ ArrayList listName = new ArrayList(); 
+
+- Các thao tác cơ bản:
++ get(int index): lấy về phần tử thứ index.
++ add(int index, E element): thêm 1 phần tử vào vị trí index. ==> add(element): thêm phần tử vào cuối danh sách.
++ addAll(): thêm tất cả các phần tử của bộ sưu tập vào cuối ArrayList
++ remove(int index): xoá 1 phần tử tại vị trí index.
++ size(): lấy về số lượng.
++ find(): tìm kiếm phần tử?????? 
++ isEmpty(): kiểm tra rỗng
++ clear(): Phương thức này được sử dụng để xóa tất cả các phần tử khỏi danh sách mảng
++ listIterator(): trả v 1 Iterator để duyệt từ vị trí bắt đầu
++ indexOf()
++ set(int index, E element):	thay đổi giá trị của phần tử tại vị trí index.
++ toArray()
+------------------------------------------------------
+Lớp LinkedList
+-Lưu trữ các phần tử sử dụng cơ chế liên kết (link)
+-Hoạt động dựa trên cơ chế liên kết giữa các Node
+-Mỗi Node chứa dữ liệu của node đó và liên kết đến node kế tiếp (mỗi node chứa giá trị của nó và tham chiếu đến phần tử tiếp theo)
++ head: phần tử đầu tiên (Node 1: chứa phần tử 1 và tham chiếu trỏ đến phần tử node 2)
++ tail: phần tử cuối cùng (Node n: chứa phần tử cuối và có tham chiếu trỏ đến null ==> không có phần tử kế tiếp)
+List<data_type> linkedList = new LinkedList<>();
+
+- Các thao tác:
++ addFirst();
++ addLast();
++ getFirst();
++ getLast();
++ removeFirst();
++ removeLast();
+
+- Doubly Linked List(Danh sách liên kết đôi):
+  • Một node chứa hai liên kết trỏ đến phần tử đứng trước và sau nó
+  • Phần tử trước của phần tử đầu tiên là null
+  • Phần tử sau của phần tử sau là null
+  . Nếu danh sách trống, head và tail là null
+- Circular Singly Linked List (Danh sách liên kết đơn vòng):
+  • Node cuối cùng trỏ đến node đầu tiên
+- Circular Doubly Linked List (Danh sách liên kết đôi vòng)
+
+
+	ArrayList 					LinkedList
+Truy xuất ngẫu nhiên nhanh 		Truy xuất ngẫu nhiên chậm
+Thêm, xoá chậm 				    Thêm, xoá nhanh
+Dữ liệu thường xuyên sửa		Dữ liệu thường xuyên thêm, xoá 
