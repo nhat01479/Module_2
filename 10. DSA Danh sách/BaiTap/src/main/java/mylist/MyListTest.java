@@ -1,4 +1,6 @@
-package org.example;
+package mylist;
+
+
 
 public class MyListTest {
     public static void main(String[] args) {

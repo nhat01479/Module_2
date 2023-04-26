@@ -1,6 +1,5 @@
-package org.example;
+package mylist;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MyList<E> {
