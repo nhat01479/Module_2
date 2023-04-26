@@ -6,10 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="helloworld" />
-        <module name="AbstractClassAndInterface" />
-        <module name="BaiTap" />
-        <module name="Inheritance_KeThua" />
+        <module name="DrawingMenu" />
+        <module name="ShowDrawings" />
       </profile>
     </annotationProcessing>
   </component>
