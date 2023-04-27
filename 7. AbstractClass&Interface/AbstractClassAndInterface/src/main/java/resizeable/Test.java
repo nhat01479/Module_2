@@ -1,8 +1,6 @@
 package resizeable;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Scanner;
+import java.util.*;
 
 public class Test {
 
@@ -19,7 +17,7 @@ public class Test {
 
 
 //        boolean checkActionMenu = true;
-       int choose = -1;
+        int choose = -1;
         do {
             System.out.println("Danh sách tác vụ");
             System.out.println("1. Thêm hình");
@@ -59,7 +57,7 @@ public class Test {
                 default:
                     System.out.println("Vui lòng chọn lại");
             }
-        }while (choose != 0);
+        } while (choose != 0);
 //            System.out.println("Do you want continue? Y/N");
 //            scanner.nextLine();
 //            String choiceContinue = scanner.nextLine();
@@ -116,26 +114,27 @@ public class Test {
                 newShapes[shapes.length] = inputCircle();
                 break;
             case 2:
-                newShapes[shapes.length] = new Rectangle(10, 15,"yellow", true);
+                newShapes[shapes.length] = new Rectangle(10, 15, "yellow", true);
                 break;
             default:
-                newShapes[shapes.length] = new Square(5,"orange", false);
+                newShapes[shapes.length] = new Square(5, "orange", false);
         }
         return newShapes;
     }
-    public static Circle inputCircle(){
+
+    public static Circle inputCircle() {
         System.out.println("Nhập bán kính");
         double radius = Double.parseDouble(scanner.nextLine());
         System.out.println("Nhập color");
         String color = scanner.nextLine();
         int choice = -1;
         boolean isFilled = true;
-        do{
+        do {
             System.out.println("isFilled");
             System.out.println("1. true");
             System.out.println("2. false");
             choice = Integer.parseInt(scanner.nextLine());
-            switch (choice){
+            switch (choice) {
                 case 1:
                     isFilled = true;
                     break;
@@ -147,6 +146,60 @@ public class Test {
         Circle circle = new Circle(radius, color, isFilled);
         return circle;
     }
+
+    public static Rectangle inputRectangle() {
+        System.out.println("Nhập width");
+        double width = Double.parseDouble(scanner.nextLine());
+        System.out.println("Nhập length");
+        double length = Double.parseDouble(scanner.nextLine());
+        System.out.println("Nhập color");
+        String color = scanner.nextLine();
+        int choice = -1;
+        boolean isFilled = true;
+        do {
+            System.out.println("isFilled");
+            System.out.println("1. true");
+            System.out.println("2. false");
+            choice = Integer.parseInt(scanner.nextLine());
+            switch (choice) {
+                case 1:
+                    isFilled = true;
+                    break;
+                case 2:
+                    isFilled = false;
+                    break;
+            }
+        } while (choice != 1 && choice != 2);
+        Rectangle rectangle = new Rectangle(width, length, color, isFilled);
+        return rectangle;
+    }
+
+    //    public static Square inputSquare(){
+//        System.out.println("Nhập width");
+//        double width = Double.parseDouble(scanner.nextLine());
+//        System.out.println("Nhập length");
+//        double length = Double.parseDouble(scanner.nextLine());
+//        System.out.println("Nhập color");
+//        String color = scanner.nextLine();
+//        int choice = -1;
+//        boolean isFilled = true;
+//        do{
+//            System.out.println("isFilled");
+//            System.out.println("1. true");
+//            System.out.println("2. false");
+//            choice = Integer.parseInt(scanner.nextLine());
+//            switch (choice){
+//                case 1:
+//                    isFilled = true;
+//                    break;
+//                case 2:
+//                    isFilled = false;
+//                    break;
+//            }
+//        } while (choice != 1 && choice != 2);
+//        Rectangle rectangle = new Rectangle(width, length, color, isFilled);
+//        return rectangle;
+//    }
     public static int menuAddNewShape() {
 
         int choice = -1;
@@ -159,14 +212,33 @@ public class Test {
         } while (choice < 1 && choice > 3);
         return choice;
     }
-    public static void menuEditShape(Shape[] shapes){
+
+    public static void menuEditShape(Shape[] shapes) {
         int index = -1;
-        do{
+        do {
             System.out.println("Chọn vị trí hình muốn sửa");
             index = Integer.parseInt(scanner.nextLine());
-        }while (index < 0 && index >= shapes.length - 1);
+        } while (index < 0 && index >= shapes.length - 1);
         System.out.println("Vị trí hình muốn sửa là " + index);
-        shapes[index] = inputCircle();
+        System.out.println("Bạn muốn sửa thành hình nào");
+
+        /*
+        Set<String> shapeTypes = new HashSet<>();
+        for (int i = 0; i < shapes.length; i++) {
+            shapeTypes.add(shapes[i].getClass().getSimpleName());
+        }
+        Set<String> shapeTypeChoosens = new HashSet<>();
+        for (String item : shapeTypes) {
+            if (!item.equalsIgnoreCase(shapes[index].getClass().getSimpleName())) {
+                shapeTypeChoosens.add(item);
+            }
+        }
+        for (String item : shapeTypeChoosens) {
+            System.out.println(item);
+        }
+        */
+        int choice = Integer.parseInt(scanner.nextLine());
+            shapes[index] = inputCircle();
 
     }
 
@@ -187,18 +259,19 @@ public class Test {
         }
         return newShapes;
     }
-    public static int menuDeleteShape(Shape[] shapes){
+
+    public static int menuDeleteShape(Shape[] shapes) {
         int index = -1;
         do {
-        System.out.println("Nhập vị trí hình muốn xoá");
-        index = Integer.parseInt(scanner.nextLine());
+            System.out.println("Nhập vị trí hình muốn xoá");
+            index = Integer.parseInt(scanner.nextLine());
         } while (index < 0 && index >= shapes.length - 1);
         return index;
     }
 
-    public static void sort(Shape[] shapes){
+    public static void sort(Shape[] shapes) {
         int choice = -1;
-        do{
+        do {
             System.out.println("Sắp xếp các hình");
             System.out.println("1. Theo diện tích");
             System.out.println("2. Theo tên");
@@ -206,7 +279,7 @@ public class Test {
             System.out.println("4. Theo trạng thái tô màu");
             System.out.println("0. Trở lại");
             choice = Integer.parseInt(scanner.nextLine());
-            switch (choice){
+            switch (choice) {
                 case 1:
                     sortByArea(shapes);
                     break;
@@ -219,11 +292,11 @@ public class Test {
             }
         } while (choice != 0);
     }
+
     public static void sortByArea(Shape[] shapes) {
         ComparatorArea comparator = new ComparatorArea();
         Arrays.sort(shapes, comparator);
     }
-
 
 
     public static void showShapes(Shape[] shapes) {
@@ -231,16 +304,17 @@ public class Test {
             System.out.println(shape.toString());
         }
     }
-    public static void menuGetArea(Shape[] shapes){
+
+    public static void menuGetArea(Shape[] shapes) {
         int choice = -1;
-        do{
+        do {
             System.out.println("Menu tính diện tích");
             System.out.println("1. Tổng diện tích các hình");
             System.out.println("2. Diện tích các hình theo màu và trạng thái tô màu");
             System.out.println("0. Trở lại");
             double total = 0;
             choice = Integer.parseInt(scanner.nextLine());
-            switch (choice){
+            switch (choice) {
                 case 1:
                     total = getTotalArea(shapes);
                     System.out.println(total);
@@ -256,7 +330,7 @@ public class Test {
                 default:
                     System.out.println("Nhập lại");
             }
-        }while (choice != 0);
+        } while (choice != 0);
     }
 
     public static double getTotalArea(Shape[] shapes) {
@@ -275,16 +349,17 @@ public class Test {
         }
         return total;
     }
+
     public static void menuFindShape(Shape[] shapes) {
         int choice = -1;
-        do{
+        do {
             System.out.println("Menu tìm hình");
             System.out.println("1. Theo màu");
             System.out.println("2. Theo trạng thái tô màu");
             System.out.println("3. Theo tên hình"); //chưa
             System.out.println("0. Trở lại");
             choice = Integer.parseInt(scanner.nextLine());
-            switch (choice){
+            switch (choice) {
                 case 1:
                     System.out.println("Nhập màu muốn tìm");
                     String color = scanner.nextLine();
@@ -299,8 +374,9 @@ public class Test {
                 default:
                     System.out.println("Nhập lại");
             }
-        }while (choice != 0);
+        } while (choice != 0);
     }
+
     public static void getShapeByColorAndIsFilled(Shape[] shapes, String color, boolean boo) {
         for (Shape shape : shapes) {
             if (shape.getColor().equalsIgnoreCase(color) && shape.isFilled() == boo) {
@@ -308,6 +384,7 @@ public class Test {
             }
         }
     }
+
     public static void getShapeByColorAndIsFilled(Shape[] shapes, String color) {
         for (Shape shape : shapes) {
             if (shape.getColor().equalsIgnoreCase(color)) {
@@ -315,6 +392,7 @@ public class Test {
             }
         }
     }
+
     public static void getShapeByColorAndIsFilled(Shape[] shapes, boolean isFilled) {
         for (Shape shape : shapes) {
             if (shape.isFilled() == isFilled) {
@@ -322,17 +400,19 @@ public class Test {
             }
         }
     }
-    public static void getShapeByClass(Shape[] shapes){
+
+    public static void getShapeByClass(Shape[] shapes) {
     }
-    public static boolean chooseFilled(){
+
+    public static boolean chooseFilled() {
         int choice1 = -1;
         boolean isFilled = true;
-        do{
+        do {
             System.out.println("isFilled");
             System.out.println("1. true");
             System.out.println("2. false");
             choice1 = Integer.parseInt(scanner.nextLine());
-            switch (choice1){
+            switch (choice1) {
                 case 1:
                     isFilled = true;
                     break;
