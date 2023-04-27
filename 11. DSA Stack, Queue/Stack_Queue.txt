@@ -1,0 +1,65 @@
+Stack (ngăn xếp)
+
+Stack là 1 cấu trúc dữ liệu danh sách, trong đó việc thêm và lấy các phần tử được thực hiện theo quy tắc Last-In-First-Out (LIFO) First-In-Last-Out (FILO).
+
+Lớp Stack 
+
++ Stack()
+
++ isEmpty() 		==> boolean
+
++ peek(): E 		==> trả về phần tử trên cùng của stack mà không xoá phần tử này
+
++ pop(): E 			==> trả về và xoá phần tử trên cùng của stack (phần tử thứ (n - 1)
+
++ push(E: e): E 		==> thêm 1 phần tử vào trên cùng của stack
+
++ search(Object o): int ==> trả về chỉ số của phần tử "o" tính từ đỉnh của Stack, số đếm bắt đầu từ 1. 
+				    Nếu không thấy thì trả về -1 
+
+
+-     Stack<Integer> stack = new Stack<>();
+
+- Ứng dụng của ngăn xếp:
+Trực tiếp:
++ Lịch sử duyệt web
++ Dãy Undo trong soạn thảo văn bản
++ Kiểm tra tính hợp lệ của dấu ngoặc đơn trong toán học
++ Đổi cơ số
++ Quay lui (Backtracking)
++ Khử đệ quy 
+Gián tiếp:
++ Hỗ trợ cho các thuật toán
++ Thành phần của các CTDL khác
+-------------------------------------------------------
+Queue (Hàng đợi)
+- Là 1 cấu trúc dữ liệu danh sách, trong đó việc thêm và lấy các phần tử được thực hiên theo quy tắc FIFO (First-In-First-Out)
+
+- Lớp PriorityQueue của Java Collection
+
++ offer(E e): boolean 		==> Thêm phần tử vào queue
+		
++ poll(): E				==> lấy phần tử ở phần đầu của queue hoặc trả về null nếu rỗng
++ remove(): E			==> LẤY VÀ XOÁ phần tử ở phần đầu của queue và tung ra ngoại lệ nếu rỗng
++ peek(): E				==> Lấy phần tử ở phần đầu của queue hoặc trả về null nếu rỗng
++element(): E			==> Lấy phần tử ở phần đầu của queue và tung ngoại lễ nếu rỗng
+
+
++  isEmpty(): kiểm tra xem hàng đợi là trống hay hay không
+
+
+Queue<Integer> queue = new LinkedList<>();
+
+
+
+---------------------------------------------------------
+Tổngkết
+• Generic là cơ chế cho phép truyền kiểu dữ liệu vào như là tham số cho các lớp, interface và phương thức
+
+• Stack là cấu trúc dữ liệu với các thao táctuân theo trật tự First-In/Last-Out
+
+• Sử dụn gArrayList để triển khai Stack hiệu quả hơn là sử dụng LinkedList
+
+• Queue là cấu trúc dữ liệu với các thao tác tuân theo trật tự First-In/Last-Out
+
+• Sử dụng LinkedList để triển khai Queue hiệu quả hơn là sử dụng ArrayList
