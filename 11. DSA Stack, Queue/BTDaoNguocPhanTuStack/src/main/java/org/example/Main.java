@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.Stack;
 
 public class Main {
@@ -12,12 +13,17 @@ public class Main {
             stack.push(num);
         }
         System.out.println("Mảng stack: " + stack);
-
+        while (!stack.isEmpty()){
+            for (int i = 0; i < numbers.length; i++){
+                numbers[i] = stack.pop();
+            }
+        }
+/*
         Stack<Integer> reverseStack = new Stack<>();
         while (!stack.isEmpty()){
             reverseStack.push(stack.pop());
-        }
-        System.out.println("Đảo mảng stack: " + reverseStack);
+        }*/
+        System.out.println("Đảo mảng stack: " + Arrays.toString(numbers));
 
         /**************************************************/
         Stack<String> wStack = new Stack<>();
@@ -37,12 +43,17 @@ public class Main {
         }
 
      */
+        /*
         String newStr = "";
         while (!wStack.isEmpty()){
             String mWord = wStack.pop();
             newStr += mWord;
         }
         System.out.println("Đảo chuỗi: " + newStr);
-
+*/
+        Iterator<String> iterator = wStack.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }
