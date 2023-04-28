@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Iterator;
 import java.util.Stack;
 
 public class Test {
@@ -9,20 +10,24 @@ public class Test {
         stack.add(5);
         stack.add(6);
         stack.add(3);
-        stack.add(2,10);
         System.out.println(stack.empty());
         System.out.println(stack.search(1));
         System.out.println(stack.size());
-        System.out.println("--------");
+        System.out.println("----- Duyệt mảng dùng for ---");
         for (Integer s: stack){
             System.out.println(s);
         }
-        System.out.println("Pop");
-        while ((!stack.isEmpty())){
-            stack.pop();
-        }
-        for (Integer s: stack){
-            System.out.println(s);
+//        System.out.println("Pop");
+//        while ((!stack.isEmpty())){
+//            stack.pop();
+//        }
+//        for (Integer s: stack){
+//            System.out.println(s);
+//        }
+        System.out.println("Duyệt theo bằng Iterator");
+        Iterator<Integer> iterator = stack.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(stack.pop());
         }
     }
 }
