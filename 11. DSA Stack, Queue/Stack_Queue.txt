@@ -39,10 +39,10 @@ Queue (Hàng đợi)
 
 + offer(E e): boolean 		==> Thêm phần tử vào queue
 		
-+ poll(): E				==> lấy phần tử ở phần đầu của queue hoặc trả về null nếu rỗng
++ poll(): E				==> LẤY VÀ XOÁ phần tử ở phần đầu của queue hoặc trả về null nếu rỗng
 + remove(): E			==> LẤY VÀ XOÁ phần tử ở phần đầu của queue và tung ra ngoại lệ nếu rỗng
 + peek(): E				==> Lấy phần tử ở phần đầu của queue hoặc trả về null nếu rỗng
-+element(): E			==> Lấy phần tử ở phần đầu của queue và tung ngoại lễ nếu rỗng
++ element(): E			==> Lấy phần tử ở phần đầu của queue và tung ngoại lễ nếu rỗng
 
 
 +  isEmpty(): kiểm tra xem hàng đợi là trống hay hay không
