@@ -1,4 +1,4 @@
-package comparator;
+package org.example;
 
 
 import java.util.ArrayList;
@@ -9,13 +9,12 @@ public class Test {
     public static void main(String[] args) {
         ArrayList<Person> people = new ArrayList<>();
         people.add(new Person("Nhàn",22));
-        people.add(new Person("Nhân",22));
+        people.add(new Person("Nhân",21));
         people.add(new Person("Thư",20));
         people.add(new Person("Anh",21));
-        people.add(new Person("Tiến",21));
+        people.add(new Person("Tiến",23));
         people.add(new Person("Trang",21));
         people.add(new Person("Ngọc",21));
-        ArrayList<Person> list = new ArrayList<>(people);
         System.out.println("list student");
         for (Person student: people) {
             System.out.println(student.toString());
@@ -43,11 +42,5 @@ public class Test {
         }
 
 
-    }
-}
-class ComparatorTest implements Comparator<Person>{
-    @Override
-    public int compare(Person o1, Person o2) {
-        return o1.getAge() - (o2.getAge());
     }
 }
