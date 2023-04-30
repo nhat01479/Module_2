@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Map" />
+        <module name="HashMapAndHashSet" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="HashSetAndHashMap" target="20" />
+      <module name="Map" target="20" />
+      <module name="ThucHanh" target="20" />
     </bytecodeTargetLevel>
   </component>
 </project>
