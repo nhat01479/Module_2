@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/BubbleSort/pom.xml" />
+        <option value="$PROJECT_DIR$/SelectionSort/pom.xml" />
       </list>
     </option>
   </component>
