@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="BinarySearchByRecursive" />
         <module name="THDoPhucTapThuatToan" />
+        <module name="LargestAscendingString" />
         <module name="Search" />
       </profile>
     </annotationProcessing>
