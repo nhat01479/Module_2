@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/BubbleSort/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/BubbleSort/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/InsertionSort/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/InsertionSort/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SelectionSort/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SelectionSort/src/main/resources" charset="UTF-8" />
   </component>
