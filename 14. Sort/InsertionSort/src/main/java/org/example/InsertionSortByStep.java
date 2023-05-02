@@ -2,15 +2,15 @@ package org.example;
 
 import java.util.Arrays;
 
-public class InsertSortByStep {
+public class InsertionSortByStep {
     public static void main(String[] args) {
         int[] list = {2, 4, 5, 3, 1, 5, 6};
-        InsertSortByStep ob = new InsertSortByStep();
-        ob.insertSortByStep(list);
+        InsertionSortByStep ob = new InsertionSortByStep();
+        ob.insertionSortByStep(list);
         System.out.println(Arrays.toString(list));
 
     }
-    public  void insertSortByStep(int[] array){
+    public  void insertionSortByStep(int[] array){
         for (int i = 0; i < array.length; i++){
             System.out.println("i = " + i);
             System.out.println("Gán temp = array[" + i + "] = " + array[i] + " và j = i = " + i);
