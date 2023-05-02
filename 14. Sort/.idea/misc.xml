@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/SelectionSort/pom.xml" />
         <option value="$PROJECT_DIR$/InsertionSort/pom.xml" />
         <option value="$PROJECT_DIR$/InterchangeSort/pom.xml" />
+        <option value="$PROJECT_DIR$/QuickSort/pom.xml" />
       </list>
     </option>
   </component>

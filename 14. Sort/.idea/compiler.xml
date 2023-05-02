@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SelectionSort" />
         <module name="InsertionSort" />
+        <module name="QuickSort" />
         <module name="InterchangeSort" />
         <module name="BubbleSort" />
       </profile>
