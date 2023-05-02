@@ -32,8 +32,8 @@ public class Test {
 
 
         ComparatorTest comparatorTest = new ComparatorTest();
-        Collections.sort(people, comparatorTest);
-
+//        Collections.sort(people, comparatorTest);
+        people.sort(comparatorTest);
 
 
         System.out.println("After-sort");

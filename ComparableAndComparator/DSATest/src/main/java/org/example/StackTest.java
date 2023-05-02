@@ -13,10 +13,10 @@ public class StackTest {
         for (Integer num : list) {
             stack.push(num);
         }
+        System.out.println("Print Stack:");
         System.out.println(stack);
-        stack.search(3);
-        System.out.println(stack.search(3));
-        System.out.println(stack.push(24));
+        System.out.println("Seach element = 3 in stack: " + stack.search(3));
+        System.out.println("push 24 to stack: " + stack.push(24));
         while (!stack.isEmpty()) {
             System.out.println(stack.pop());
         }
