@@ -44,9 +44,21 @@ public class MapTest {
         treeMap.put(7,"A");
         treeMap.put(5,"B");
         treeMap.put(4,"C");
-        treeMap.put(0,"D");
+        treeMap.put(0,"B");
         treeMap.put(8,"E");
         treeMap.put(9,"F");
         System.out.println(treeMap);
+        System.out.println("-----------------Get key from value--------------------");
+        Set<Integer> keys = getKeysByValue(treeMap, "B");
+        System.out.println(keys);
+    }
+    public static <T, E> Set<T> getKeysByValue(Map<T, E> map, E value) {
+        Set<T> keys = new HashSet<T>();
+        for (Map.Entry<T, E> entry : map.entrySet()) {
+            if (Objects.equals(value, entry.getValue())) {
+                keys.add(entry.getKey());
+            }
+        }
+        return keys;
     }
 }
