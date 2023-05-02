@@ -18,7 +18,7 @@ public class TestMap {
         for (String key: hashMap.keySet()){
             System.out.println("Key: " + key + " - Value: " + hashMap.get(key));
         }
-        System.out.println("---------------TreeMap: lưu key theo thứ tự giảm dần---------------");
+        System.out.println("---------------TreeMap: lưu key theo thứ tự tăng dần---------------");
         System.out.println("Display entries in ascending order of key");
         Map<String, Integer> treeMap = new TreeMap<>();
         treeMap.put("Smith", 30);

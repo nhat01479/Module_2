@@ -7,6 +7,9 @@
         <option value="$PROJECT_DIR$/ThucHanh/pom.xml" />
         <option value="$PROJECT_DIR$/ProductManager/pom.xml" />
         <option value="$PROJECT_DIR$/BinarySearchTree/pom.xml" />
+        <option value="$PROJECT_DIR$/ThucHanh/Map/pom.xml" />
+        <option value="$PROJECT_DIR$/ThucHanh/SortByComparableAndComparator/pom.xml" />
+        <option value="$PROJECT_DIR$/ThucHanh/HashMapAndHashSet/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

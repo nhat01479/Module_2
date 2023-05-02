@@ -7,6 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ProductManager" />
+        <module name="HashMapAndHashSet" />
+        <module name="SortByComparableAndComparator" />
+        <module name="Map" />
         <module name="BinarySearchTree" />
       </profile>
     </annotationProcessing>
