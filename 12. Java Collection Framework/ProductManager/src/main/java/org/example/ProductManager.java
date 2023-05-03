@@ -143,15 +143,48 @@ public class ProductManager {
 
     public static void editProduct(ArrayList<Product> products) {
         Product presentProduct = findById(products);
-        System.out.println("Nhập thông tin cần sửa");
-        Product newProduct = inputProduct(products);
-        assert presentProduct != null;
-        presentProduct.setId(newProduct.getId());
-        presentProduct.setName(newProduct.getName());
-        presentProduct.setPrice(newProduct.getPrice());
-        showProductById(products, presentProduct.getId());
-
+        if (presentProduct != null) {
+            int select = -1;
+            do {
+                System.out.println("Nhập thông tin cần sửa");
+                System.out.println("1. Sửa hết");
+                System.out.println("2. Sửa ID");
+                System.out.println("3. Sửa Tên");
+                System.out.println("4. Sửa Giá");
+                System.out.println("0. Trở lại");
+                select = Integer.parseInt(scanner.nextLine());
+                switch (select) {
+                    case 1:
+                        Product newProduct = inputProduct(products);
+                        presentProduct.setId(newProduct.getId());
+                        presentProduct.setName(newProduct.getName());
+                        presentProduct.setPrice(newProduct.getPrice());
+                        showProductById(products, presentProduct.getId());
+                        break;
+                    case 2:
+                        int newID = inputId(products);
+                        presentProduct.setId(newID);
+                        showProductById(products, presentProduct.getId());
+                        break;
+                    case 3:
+                        String newName = scanner.nextLine();
+                        presentProduct.setName(newName);
+                        showProductById(products, presentProduct.getId());
+                        break;
+                    case 4:
+                        int newPrice = Integer.parseInt(scanner.nextLine());
+                        presentProduct.setPrice(newPrice);
+                        showProductById(products, presentProduct.getId());
+                        break;
+                    case 0:
+                        break;
+                    default:
+                        System.out.println("Nhập lại");
+                }
+            } while (select < 0 && select > 4);
+        }
     }
+
     public static void findByPrice(ArrayList<Product> products) {
         System.out.println("Nhập giá cần tìm");
         int price = Integer.parseInt(scanner.nextLine());
@@ -194,8 +227,7 @@ public class ProductManager {
         showProductById(products, newProduct.getId());
 
     }
-
-    public static Product inputProduct(ArrayList<Product> products) {
+    public static int inputId(ArrayList<Product> products){
         int id = -1;
         boolean check = true;        // check ID trùng
         while (check) {
@@ -210,7 +242,10 @@ public class ProductManager {
                 }
             }
         }
-
+        return id;
+    }
+    public static Product inputProduct(ArrayList<Product> products) {
+        int id = inputId(products);
         System.out.println("Nhập tên sản phẩm");
         String name = scanner.nextLine();
         System.out.println("Nhập giá sản phẩm");

@@ -6,12 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="helloworld" />
-        <module name="ProductManager" />
-        <module name="AbstractClassAndInterface" />
-        <module name="IllegalTriangleException" />
-        <module name="BaiTap" />
-        <module name="Inheritance_KeThua" />
+        <module name="StackAndQuere" />
+        <module name="MyGenericStack" />
+        <module name="BTDaoNguocPhanTuStack" />
+        <module name="MyLinkedListQueue" />
       </profile>
     </annotationProcessing>
   </component>
