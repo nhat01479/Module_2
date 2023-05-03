@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ProductManager" />
         <module name="HashMapAndHashSet" />
+        <module name="PreorderBST" />
+        <module name="ProductManager" />
         <module name="SortByComparableAndComparator" />
+        <module name="PostorderBST" />
+        <module name="InoderBinarySearchTree" />
         <module name="Map" />
-        <module name="BinarySearchTree" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -6,7 +6,7 @@ public interface Tree<E> {
      * Chèn phần tử e vào BST
      * Trả về true nếu thành công
      */
-    public void inorder();
+    public void preorder();
     /**
      * Duyệt theo thứ tự từ node gốc
      */

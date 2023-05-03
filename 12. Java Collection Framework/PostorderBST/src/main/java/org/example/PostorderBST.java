@@ -1,15 +1,15 @@
 package org.example;
 
-public class BST<E extends Comparable<E>> extends AbstractTree<E> {
+/* Postorder: duyệt hậu thứ tự: duyệt cây con bên trái --> duyệt cây con bên phải --> root*/
+public class PostorderBST<E extends Comparable<E>> extends AbstractTree<E>{
     protected TreeNode<E> root;
     protected int size = 0;
-    public BST(){
+    public PostorderBST(){
     }
-    public BST(E[] objects){
-        for (int i = 0; i < objects.length; i++)
-            insert(objects[i]);
+    public PostorderBST(E[] objects){
+        for (E object : objects) insert(object);
     }
-    public class TreeNode<E> {
+    public static class TreeNode<E> {
         protected E element;
         private TreeNode<E> left;
         private TreeNode<E> right;
@@ -53,18 +53,29 @@ public class BST<E extends Comparable<E>> extends AbstractTree<E> {
         return size;
     }
     @Override
-    public void inorder() {
-        inorder(root);
+    public void postorder() {
+        postorder(root);
+    }
+    protected void postorder(TreeNode<E> root) {
+        if (root == null) return;
+        postorder(root.left);
+        postorder(root.right);
+        System.out.println(root.element + " ");
     }
 
-    protected void inorder(TreeNode<E> root) {
-        if (root == null) return;
-        inorder(root.left);
-        System.out.println(root.element + " ");
-        inorder(root.right);
+    public static void main(String[] args) {
+        PostorderBST<Integer> tree = new PostorderBST<>();
+        tree.root = new TreeNode<>(1);
+        tree.root.left = new TreeNode<>(2);
+        tree.root.right = new TreeNode<>(3);
+        tree.root.left.left = new TreeNode<>(4);
+        tree.root.left.right = new TreeNode<>(5);
+
+        // Function call
+        System.out.println(
+                "\nPostorder traversal of binary tree is ");
+        tree.postorder();
     }
 
 
 }
-
-
