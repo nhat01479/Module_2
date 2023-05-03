@@ -6,18 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="HashMapAndHashSet" />
-        <module name="InorderBST" />
-        <module name="PreorderBST" />
         <module name="ProductManager" />
-        <module name="SearchByBST" />
+        <module name="HashMapAndHashSet" />
         <module name="SortByComparableAndComparator" />
-        <module name="PostorderBST" />
         <module name="Map" />
+        <module name="BinarySearchTree" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="InoderBinarySearchTree" target="20" />
       <module name="map" target="1.7" />
       <module name="ThucHanh" target="1.5" />
     </bytecodeTargetLevel>

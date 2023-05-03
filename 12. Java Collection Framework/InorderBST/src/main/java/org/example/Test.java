@@ -1,4 +1,4 @@
-package org.inorder;
+package org.example;
 
 public class Test {
     public static void main(String[] args) {
@@ -13,9 +13,11 @@ public class Test {
         //traverse tree
         System.out.println("Inorder (sorted)");
         tree.inorder();
+
         System.out.println("The number of nodes is: " + tree.getSize());
-
-
+        System.out.println(tree.search(5));
+        tree.deleteANode(1);
+        tree.inorder();
 
     }
 }

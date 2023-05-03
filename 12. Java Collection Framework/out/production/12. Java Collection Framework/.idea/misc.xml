@@ -10,10 +10,6 @@
         <option value="$PROJECT_DIR$/ThucHanh/Map/pom.xml" />
         <option value="$PROJECT_DIR$/ThucHanh/SortByComparableAndComparator/pom.xml" />
         <option value="$PROJECT_DIR$/ThucHanh/HashMapAndHashSet/pom.xml" />
-        <option value="$PROJECT_DIR$/PreorderBST/pom.xml" />
-        <option value="$PROJECT_DIR$/PostorderBST/pom.xml" />
-        <option value="$PROJECT_DIR$/SearchByBST/pom.xml" />
-        <option value="$PROJECT_DIR$/InorderBST/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
