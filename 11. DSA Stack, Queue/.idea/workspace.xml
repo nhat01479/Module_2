@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d4a388f-f299-4322-81fc-f5a34f402e4e" name="Changes" comment="Stack &amp; Queue, duyệt bằng iterator và for">
-      <change beforePath="$PROJECT_DIR$/../12. Java Collection Framework/.idea/12. Java Collection Framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../12. Java Collection Framework/.idea/12. Java Collection Framework.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12. Java Collection Framework/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../12. Java Collection Framework/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12. Java Collection Framework/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../12. Java Collection Framework/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12. Java Collection Framework/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../12. Java Collection Framework/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemSoLanXuatHien/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DemSoLanXuatHien/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12. Java Collection Framework/InorderBST/src/main/java/org/example/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12. Java Collection Framework/InorderBST/src/main/java/org/example/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12. Java Collection Framework/PostorderBST/src/main/java/org/example/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12. Java Collection Framework/PostorderBST/src/main/java/org/example/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12. Java Collection Framework/PreorderBST/src/main/java/org/example/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12. Java Collection Framework/PreorderBST/src/main/java/org/example/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,21 +44,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Module_2/11. DSA Stack, Queue&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "20",
+    "last_opened_file_path": "D:/Module_2/6. Inheritance/Triangle",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.Main">
+}]]></component>
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="DemSoLanXuatHien" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="BTDaoNguocPhanTuStack" />
@@ -80,6 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test" />
       </list>
@@ -99,6 +121,7 @@
       <workItem from="1682834990736" duration="14000" />
       <workItem from="1683038043379" duration="83000" />
       <workItem from="1683038201848" duration="15000" />
+      <workItem from="1683167164777" duration="8941000" />
     </task>
     <task id="LOCAL-00001" summary="demo stack">
       <created>1682588518705</created>

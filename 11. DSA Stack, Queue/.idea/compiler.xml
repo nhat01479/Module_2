@@ -10,6 +10,7 @@
         <module name="MyGenericStack" />
         <module name="BTDaoNguocPhanTuStack" />
         <module name="MyLinkedListQueue" />
+        <module name="DemSoLanXuatHien" />
       </profile>
     </annotationProcessing>
   </component>
