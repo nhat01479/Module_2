@@ -13,7 +13,7 @@ public class TestDoWhile {
         do{
             System.out.println("Nhap side2");
             side2 = scanner.nextDouble();
-        }while (side1 <= 0);
+        }while (side2 <= 0);
 
         do {
             System.out.println("Nhap side3");
