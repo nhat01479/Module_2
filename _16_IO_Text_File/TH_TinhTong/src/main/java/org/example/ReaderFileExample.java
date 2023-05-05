@@ -20,7 +20,7 @@ public class ReaderFileExample {
         System.out.println("Nhập đường dẫn");
         Scanner scanner = new Scanner(System.in);
 //        String path = scanner.nextLine();
-        String path = "thuchanh1.txt";
+        String path = "D:\\Module_2\\_16_IO_Text_File\\TH_TinhTong\\src\\main\\java\\org\\example\\thuchanh1.txt";
         ReaderFileExample readerFileExample = new ReaderFileExample();
         readerFileExample.readFileText(path);
     }
@@ -39,7 +39,7 @@ public class ReaderFileExample {
                 sum += Integer.parseInt(line);
             }
             br.close();
-            fr.close();
+//            fr.close();
             System.out.println("SUM = " + sum);
         } catch (Exception e){
             System.out.println("File không tồn tại hoặc nội dung có lỗi!");
