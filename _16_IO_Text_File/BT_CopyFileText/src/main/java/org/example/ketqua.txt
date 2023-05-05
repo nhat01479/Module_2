@@ -1,0 +1,3 @@
+BufferedReader được sử dụng để đọc dữ liệu một cách hiệu quả hơn bằng cách đọc theo các buffer.
+Số lượng ký tự trong tệp: 2BufferedReader được sử dụng để đọc dữ liệu một cách hiệu quả hơn bằng cách đọc theo các buffer.
+Số lượng ký tự trong tệp: 2
