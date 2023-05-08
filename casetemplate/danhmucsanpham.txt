@@ -1,0 +1,16 @@
+Chăm sóc cá nhân
+    Chăm sóc tóc
+        Sunsilk, Lifebuoy, Dove, Clear
+    Chăm sóc da
+        Pond's, Vaseline, Lifebuoy, Dove, Hazeline
+    Chăm sóc răng miệng
+        P/S, Close Up
+Chăm sóc nhà cửa
+    Bộit giặt
+        Omo, Viso, Surf
+    Nước xả vải
+       Comfort
+    Vệ sinh nhà cửa
+        Sunlight, Vim, Cif
+Thực phẩm
+        Knorr, Lipton
