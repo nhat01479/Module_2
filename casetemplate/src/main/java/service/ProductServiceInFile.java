@@ -3,52 +3,71 @@ package service;
 import utils.DateUtils;
 import model.ECategory;
 import model.Product;
+import utils.FileUtils;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 public class ProductServiceInFile {
+    private final String path = "D:\\Module_2\\casetemplate\\data\\product.csv";
+    public String getPath(){
+        return path;
+    }
+    private Scanner scanner = new Scanner(System.in);
+
     //Đọc sản phẩm từ file
     public List<Product> findAllProduct(){
-        List<Product> products = new ArrayList<>();
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("D:\\test\\Test\\casetemplate\\data\\product.csv"));
-            String line = null;
-            while ((line = bufferedReader.readLine()) != null){
-                String[] items = line.split(",");
-                long idProduct = Long.parseLong(items[0]);
-                double priceProduct = Double.parseDouble(items[3]);
-                Date createAt = DateUtils.parse(items[4]);
-                ECategory eCategory = ECategory.getECategoryByName(items[5]);
-
-                Product p = new Product(idProduct, items[1], items[2], priceProduct, createAt, eCategory);
-                products.add(p);
-            }
-            bufferedReader.close();
-        } catch (IOException ioException) {
-            ioException.printStackTrace();
-        }
+        List<Product> products = FileUtils.readFile(path, Product.class);
         return products;
+    }
+    public Product findProduct(long idProduct){
+        List<Product> products = findAllProduct();
+        for (Product product: products){
+            if (product.getId() == idProduct){
+                System.out.println(product);
+                return product;
+            }
+        }
+        return null;
     }
 
     //Thêm sản phẩm và ghi vào file
     public void addProduct(Product product) {
         List<Product> products = findAllProduct();
         products.add(product);
-        writeProductToFile(products);
+        FileUtils.writeProductToFile(path, products);
     }
     //Ghi sản phẩm vào file
-    public void writeProductToFile(List<Product> products){
-        try {
-            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("D:\\test\\Test\\casetemplate\\data\\product.csv"));
-            for (Product product: products){
-                bufferedWriter.write(product.toString() + "\n");
+
+
+    public void editProduct(long idProduct, Product product) {
+        List<Product> products = findAllProduct();
+        for (Product p: products){
+            if (p.getId() == idProduct){
+                p.setName(product.getName());
+                p.setDescription(product.getDescription());
+                p.setPrice(product.getPrice());
+                p.setCreateAt(product.getCreatAt());
+                p.setECategory(product.getECategory());
             }
-            bufferedWriter.close();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
+        FileUtils.writeProductToFile(path, products);
+    }
+    public void removeProduct() {
+        List<Product> products = findAllProduct();
+
+        System.out.println("Nhập ID cần xoá:");
+        long idRemove = Long.parseLong(scanner.nextLine());
+
+        Iterator<Product> iterator = products.iterator();
+        while (iterator.hasNext()) {
+//            Product product = iterator.next();
+            if (idRemove == iterator.next().getId()) {
+                iterator.remove();
+            }
+        }
+        FileUtils.writeProductToFile(path, products);
+
+
     }
 }

@@ -4,7 +4,7 @@ import utils.DateUtils;
 
 import java.util.Date;
 
-public class Product {
+public class Product implements IModel {
     private long id;
     private String name;
     private String description;
@@ -22,6 +22,22 @@ public class Product {
         this.price = price;
         this.creatAt = creatAt;
         this.eCategory = eCategory;
+    }
+
+    @Override
+    public void parseData(String line) {
+        String[] items = line.split(",");
+        long idProduct = Long.parseLong(items[0]);
+        double priceProduct = Float.parseFloat(items[3]);
+        Date createAt = DateUtils.parse(items[4]);
+        ECategory eCategory = ECategory.getECategoryByName(items[5]);
+//        Product p = new Product(idProduct, items[1], items[2], priceProduct, createAt, eCategory);
+        this.setId(idProduct);
+        this.setName(items[1]);
+        this.setDescription(items[2]);
+        this.setPrice(priceProduct);
+        this.setCreateAt(createAt);
+        this.setECategory(eCategory);
     }
 
     @Override
@@ -65,15 +81,15 @@ public class Product {
         return creatAt;
     }
 
-    public void setCreatAt(Date creatAt) {
+    public void setCreateAt(Date creatAt) {
         this.creatAt = creatAt;
     }
 
-    public ECategory geteCategory() {
+    public ECategory getECategory() {
         return eCategory;
     }
 
-    public void seteCategory(ECategory eCategory) {
+    public void setECategory(ECategory eCategory) {
         this.eCategory = eCategory;
     }
 
