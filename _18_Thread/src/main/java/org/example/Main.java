@@ -13,6 +13,25 @@ public class Main {
         thread.start();
         thread2.start();
 //        myThread2.start();
+/*Anonymous
+        Thread t = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (int i = 0; i < 10; i++){
+                    System.out.println("A");
+                }
+            }
+        });
+        t.start();
 
+        Thread t1 = new Thread() {
+            @Override
+            public void run(){
+                for (int i = 0; i < 10; i++){
+                    System.out.println("A");
+                }
+            }
+        };
+*/
     }
 }
